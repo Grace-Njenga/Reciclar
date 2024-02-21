@@ -600,11 +600,6 @@ video {
   align-self: center;
 }
 
-.bg-primary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(40 122 40 / var(--tw-bg-opacity));
-}
-
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
