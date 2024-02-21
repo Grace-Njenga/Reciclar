@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Prompt:wght@300;400&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.libre-baskerville-regular {
+   font-family: "Libre Baskerville", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+.prompt-light {
+   font-family: "Prompt", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+}
+
+.prompt-regular {
+   font-family: "Prompt", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 300 to 700 */
+
+.yrsa-regular {
+  font-family: "Yrsa", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
