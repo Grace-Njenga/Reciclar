@@ -21,6 +21,9 @@
 li a{
   font-size: var(--font-size-base);
 }
+li a:hover{
+  color: #003500;
+}
 
 @tailwind base;
 @tailwind components;
