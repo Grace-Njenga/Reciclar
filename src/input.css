@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Prompt:wght@300;400&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Prompt:wght@300;400&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap");
 
 * {
-    /*background-color: rgb(40, 121, 40);*/
-    box-sizing: border-box;
-    max-width: 100%;
-    font-family: "Yrsa", serif;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    margin: 0 1em;
-    padding: 0;
-  }
-
-:root{
-  --font-size-base: clamp( 1rem, .34vw + .91rem, 1.19rem);
+   /*background-color: rgb(40, 121, 40);*/
+   box-sizing: border-box;
+   max-width: 100%;
+   font-family: "Yrsa", serif;
+}
+html {
+   scroll-behavior: smooth;
+}
+body {
+   margin: 0;
+   padding: 0;
 }
 
-li a{
-  font-size: var(--font-size-base);
+:root {
+   --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 }
-li a:hover{
-  color: #003500;
+
+li a {
+   font-size: var(--font-size-base);
+}
+li a:hover {
+   color: #003500;
 }
 
 @tailwind base;
@@ -45,48 +45,53 @@ li a:hover{
    font-style: normal;
 }
 .yrsa-regular {
-  font-family: "Yrsa", serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
+   font-family: "Yrsa", serif;
+   font-optical-sizing: auto;
+   font-weight: 350;
+   font-style: normal;
 }
 
 /* scrolbar  */
 /* Width and height of the scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 5px;
+   width: 10px;
+   height: 5px;
 }
 /* Track (the background of the scrollbar) */
 ::-webkit-scrollbar-track {
-  background: transparent;
+   background: transparent;
 }
 /* Handle (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
+   background: #888;
+   border-radius: 5px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+   background: #555;
 }
 
 .header {
-  width: 96%;
-  margin: 0 auto;
-  padding: 1em 0;
+   width: 96%;
+   margin: 0 auto;
+   padding: 1em 0;
 }
 
 /* logo  */
 nav__logo {
-  cursor: pointer;
-  color: #003500;
-  font-family: "Libre Baskerville", serif;
-  font-weight: bold;
-  font-size: large;
+   cursor: pointer;
+   color: #003500;
+   font-family: "Libre Baskerville", serif;
+   font-weight: bold;
+   font-size: large;
 }
 
 /* menu icon  */
-.menu{
-  display: none;
+.menu {
+   display: none;
+}
+/* main section  */
+main{
+   width: 80%;
+   margin: 0 auto;
 }
