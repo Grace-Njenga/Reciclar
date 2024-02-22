@@ -651,6 +651,10 @@ video {
   height: 100%;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .w-full{
   width: 100%;
 }
@@ -959,6 +963,10 @@ main{
     grid-column: span 3 / span 3;
   }
 
+  .md\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
   .md\:ml-4{
     margin-left: 1rem;
   }
@@ -969,6 +977,14 @@ main{
 
   .md\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
