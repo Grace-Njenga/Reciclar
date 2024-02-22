@@ -15,6 +15,8 @@ module.exports = {
       accent: "#007348",
       // green 
       main: "#003500",
+      hover: "#ffd885",
+      white: "#f8f2f2"
    },
     extend: {},
   },
