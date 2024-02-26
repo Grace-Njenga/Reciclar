@@ -600,6 +600,10 @@ video {
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
@@ -608,12 +612,25 @@ video {
   grid-column: span 1 / span 1;
 }
 
+.float-right{
+  float: right;
+}
+
+.m-0{
+  margin: 0px;
+}
+
 .m-2{
   margin: 0.5rem;
 }
 
 .m-4{
   margin: 1rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .my-2{
@@ -628,6 +645,14 @@ video {
 
 .my-4{
   margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-4{
   margin-bottom: 1rem;
 }
 
@@ -647,24 +672,28 @@ video {
   display: grid;
 }
 
-.h-full{
-  height: 100%;
+.h-\[min\]{
+  height: min;
 }
 
-.h-auto{
-  height: auto;
+.h-full{
+  height: 100%;
 }
 
 .w-full{
   width: 100%;
 }
 
-.grid-cols-1{
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+.list-inside{
+  list-style-position: inside;
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.list-decimal{
+  list-style-type: decimal;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .place-content-center{
@@ -673,10 +702,6 @@ video {
 
 .justify-between{
   justify-content: space-between;
-}
-
-.gap-0{
-  gap: 0px;
 }
 
 .gap-3{
@@ -710,14 +735,23 @@ video {
   background-color: rgb(214 244 255 / var(--tw-bg-opacity));
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-0{
+  padding: 0px;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .py-2{
@@ -742,6 +776,11 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-9xl{
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .text-base{
@@ -773,6 +812,10 @@ video {
 
 .italic{
   font-style: italic;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
 }
 
 .tracking-wider{
@@ -880,20 +923,13 @@ nav__logo {
   display: none;
 }
 
-/* main section  */
-
-main{
-  width: 86%;
-  margin: 0 auto;
-}
-
 /* hero section  */
 
-.hero__title{
+.hero__title {
   position: relative;
 }
 
-.hero__title::after{
+.hero__title::after {
   position: absolute;
   content: "";
   height: 1px;
@@ -902,31 +938,51 @@ main{
 
 /* swiper  */
 
-.swiper{
+.swiper {
   width: 100%;
-  height: auto;
+  height: 500px;
 }
 
-/* swiper pagination  */
-
-.swiper-pagination {
-  position: absolute;
-  left: 10px;
-  transform: translateY(-50%);
-}
-
-.swiper-container .swiper-pagination {
-  bottom: -30px !important;
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  padding-right: 40px;
 }
 
 .swiper-pagination > .swiper-pagination-bullet {
   opacity: 1;
-  border: #ffd885 solid 1px;
+  border: #f4c377 solid 1px;
   background-color: transparent;
 }
 
 .swiper-pagination > .swiper-pagination-bullet-active {
   background-color: #a06306;
+}
+
+/* use section  */
+
+.use {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* about us section  */
+
+.about {
+  background: url("/dist/img/HANDS.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+about_content {
+  /* background: rgba(40, 122, 40, 0.29);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(6.2px);
+   -webkit-backdrop-filter: blur(6.2px); */
+  transform: translate(-50%, -50%);
 }
 
 .hover\:scale-110:hover{
@@ -963,8 +1019,8 @@ main{
     grid-column: span 3 / span 3;
   }
 
-  .md\:col-span-1{
-    grid-column: span 1 / span 1;
+  .md\:m-0{
+    margin: 0px;
   }
 
   .md\:ml-4{
@@ -979,12 +1035,9 @@ main{
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -997,6 +1050,10 @@ main{
     grid-column: span 6 / span 6;
   }
 
+  .lg\:m-0{
+    margin: 0px;
+  }
+
   .lg\:ml-4{
     margin-left: 1rem;
   }
@@ -1007,5 +1064,15 @@ main{
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

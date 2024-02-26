@@ -18,7 +18,11 @@ module.exports = {
       hover: "#ffd885",
       white: "#f8f2f2"
    },
-    extend: {},
+    extend: {
+      height: {
+        '500': 'min',
+      }
+    },
   },
   plugins: [],
 }

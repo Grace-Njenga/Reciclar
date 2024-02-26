@@ -1,7 +1,7 @@
 @media (max-width: 500px) and (min-width: 200px){
     .nav{
         position: fixed;
-        inset: 0 0 30% 40%;
+        inset: 0 0 0 30%;
         flex-direction: column;
         background: rgba(40, 122, 40, 0.29);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -29,4 +29,11 @@
         font-size: 49px;
         color: black;
     }
+    .swiper-slide{
+        padding-right: 0px;
+    }
+    .use{
+        width: 90%;
+        margin: 0 auto;
+     }
 }

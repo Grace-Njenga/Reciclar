@@ -87,17 +87,16 @@
          </header>
       </section>
 
-      <main class="">
+      <main class="mx-4">
+         <!-- data-aos="fade-up" -->
          <section
-            class="relative grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3"
+            class="relative grid lg:grid-cols-12 md:grid-cols-6 grid-cols-1 gap-3 m-2"
          >
             <!-- hero section  -->
             <div
-               class="text-base grid place-content-center lg:-order-2 md:order-1 m-2"
+               class="lg:col-span-6 md:col-span-3 col-span-1 text-base grid place-content-center lg:-order-2 md:order-1 m-2"
             >
-               <h2 class="hero__title text-2xl prompt-regular my-2">
-                  Save The Planet
-               </h2>
+               <h2 class="text-2xl prompt-regular my-2">Save The Planet</h2>
                <p class="text-xl my-3">
                   At<span class="text-primary libre-baskerville-regular">
                      RECICLAR </span
@@ -122,13 +121,16 @@
             </div>
 
             <!-- lottie file  -->
-            <div class="h-full w-full grid place-content-center">
+            <div
+               class="h-full w-full lg:col-span-6 md:col-span-3 col-span-1 grid place-content-center"
+            >
                <dotlottie-player
                   src="https://lottie.host/a69d73e2-5426-4549-aaa4-84440f133f06/pMcz64sUih.json"
                   background="transparent"
                   speed="1"
-                  style="width: 300px; height: 300px"
+                  style="width: 100%; height: 300px"
                   loop
+                  class="w-full h-full"
                   autoplay
                ></dotlottie-player>
 
@@ -139,115 +141,203 @@
                   </h3>
                </div>
             </div>
-
          </section>
 
-         <!-- how to use and about us  -->
-         <section class="">
-            <!-- vision statement  -->
-            <!-- grid  -->
+         <!-- section resolve, approach and story -->
+         <section
+            class="mb-4 grid lg:grid-cols-12 md:grid-cols-6 grid-cols-1 h-[min]"
+         >
+            <!-- slide 1 -->
+            <!-- Slider main container -->
             <div
-               class="my-2 grid lg:grid-cols-12 md:grid-cols-6 grid-cols-1 gap-0"
-            >               
-
-               <!-- box 2 -->
-               <!-- image  -->
-               <div class="lg:col-span-6 md:col-span-3 col-span-1">
-                  <img
-                     src="./img/trash_throwing.jpg"
-                     height="100px"
-                     alt=""
-                     class=""
-                  />
-               </div>
-
-               <!-- box-1  -->
-               <!-- swiper  -->
-               <!-- slider main container  -->
-               <div
-                  class="lg:col-span-6 md:col-span-3 col-span-1 swiper bg-secondary w-full h-auto"
-               >
-                  <div class="swiper-wrapper ">
-                     <!-- slide 1 -->
-                     <div class="swiper-slide h-full w-full px-4">
-                        <div class="h-full w-full grid place-content-center px-2">
-                           <h2 class="font-bold text-2xl my-3 prompt-regular">
-                              Our Vision
-                           </h2>
-                           <p class="text-lg">
-                              At<span
-                                 class="text-primary libre-baskerville-regular"
-                              >
-                                 RECICLAR
-                              </span>
-                              , our vision is to create a sustainable future by
-                              transforming society's perception of recycling. We
-                              inspire individuals to embrace a culture of
-                              recycling through innovative incentives and
-                              seamless processes. Our goal is to minimize the
-                              harmful effects of plastic waste, conserve
-                              resources, and raise environmental consciousness.
-                              Together, we can build a harmonious coexistence
-                              between humanity and nature, contributing to a
-                              cleaner, healthier, and more sustainable planet.
-                           </p>
-                        </div>
-                     </div>
-
-                     <!-- slide 2  -->
-                     <div class="swiper-slide h-full w-full px-4">
-                        <div class="h-full w-full grid place-content-center px-2">
-                           <h2 class="font-bold text-2xl my-3 prompt-regular">
-                              Our Story
-                           </h2>
-                           <p class="text-lg">
-                              At<span
-                                 class="text-primary libre-baskerville-regular"
-                              >
-                                 RECICLAR
-                              </span>
-                              , we began with a passion for environmental preservation
-                              and a mission to revolutionize recycling. We developed a unique
-                              system that incentivizes recycling, offering 5 shillings for every
-                              plastic bottle recycled. By integrating technology and forming
-                              partnerships, we've made the process seamless and rewarding.
-                              Together with our community, we're driving change, prioritizing
-                              sustainability, and building a brighter future.
-                           </p>
-                        </div>
-                     </div>
-
-                     <!-- slide 3 -->
-                     <div class="swiper-slide h-full w-full px-4">
-                        <div class="h-full w-full grid place-content-center px-2">
-                           <h2 class="font-bold text-2xl my-3 prompt-regular">
-                              Our Approach
-                           </h2>
-                           <p class="text-lg">
-                              At<span
-                                 class="text-primary libre-baskerville-regular"
-                              >
-                                 RECICLAR
-                              </span>
-                              , we take a proactive and holistic approach to driving
-                              positive change in recycling, waste management, and sustainability.
-                              Our approach includes education, innovative incentives, seamless
-                              technology integration, collaborative partnerships, environmental
-                              stewardship, and continuous innovation. Together, these elements
-                              drive our commitment to creating a greener, more sustainable future.
-                           </p>
-                        </div>
+               class="lg:col-span-6 md:col-span-3 col-span-1 h-full w-full swiper"
+            >
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide bg-secondary px-3">
+                     <!-- content  -->
+                     <div class="h-full w-full grid place-content-center px-2">
+                        <h2 class="font-bold text-2xl my-3 prompt-regular">
+                           Our Vision
+                        </h2>
+                        <p class="text-lg">
+                           At<span
+                              class="text-primary libre-baskerville-regular"
+                           >
+                              RECICLAR
+                           </span>
+                           , our vision is to create a sustainable future by
+                           transforming society's perception of recycling. We
+                           inspire individuals to embrace a culture of recycling
+                           through innovative incentives and seamless processes.
+                           Our goal is to minimize the harmful effects of
+                           plastic waste, conserve resources, and raise
+                           environmental consciousness. Together, we can build a
+                           harmonious coexistence between humanity and nature,
+                           contributing to a cleaner, healthier, and more
+                           sustainable planet.
+                        </p>
                      </div>
                   </div>
 
-                  <!-- PAGINATION AND SCROLLBARS  -->
-                  <div class="swiper-pagination"></div>
+                  <!-- slide 2  -->
+                  <div class="swiper-slide bg-secondary px-3">
+                     <!-- content  -->
+                     <div class="h-full w-full grid place-content-center px-2">
+                        <h2 class="font-bold text-2xl my-3 prompt-regular">
+                           Our Story
+                        </h2>
+                        <p class="text-lg">
+                           At<span
+                              class="text-primary libre-baskerville-regular"
+                           >
+                              RECICLAR
+                           </span>
+                           , we began with a passion for environmental
+                           preservation and a mission to revolutionize
+                           recycling. We developed a unique system that
+                           incentivizes recycling, offering 5 shillings for
+                           every plastic bottle recycled. By integrating
+                           technology and forming partnerships, we've made the
+                           process seamless and rewarding. Together with our
+                           community, we're driving change, prioritizing
+                           sustainability, and building a brighter future.
+                        </p>
+                     </div>
+                  </div>
+
+                  <!-- slide 3  -->
+                  <div class="swiper-slide bg-secondary px-3">
+                     <!-- content  -->
+                     <div
+                        class="h-full w-full grid place-content-center px-2 lg:m-0 md:m-0 mb-10"
+                     >
+                        <h2 class="font-bold text-2xl my-3 prompt-regular">
+                           Our Approach
+                        </h2>
+                        <p class="text-lg">
+                           At<span
+                              class="text-primary libre-baskerville-regular"
+                           >
+                              RECICLAR
+                           </span>
+                           , we take a proactive and holistic approach to
+                           driving positive change in recycling, waste
+                           management, and sustainability. Our approach includes
+                           education, innovative incentives, seamless technology
+                           integration, collaborative partnerships,
+                           environmental stewardship, and continuous innovation.
+                           Together, these elements drive our commitment to
+                           creating a greener, more sustainable future.
+                        </p>
+                     </div>
+                  </div>
                </div>
+
+               <!-- If we need pagination -->
+               <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- side 2  -->
+            <div class="lg:col-span-6 md:col-span-3 col-span-1 h-full w-full">
+               <img
+                  src="./img/trash_throwing.jpg"
+                  alt=""
+                  class="h-full w-full object-cover"
+               />
+            </div>
+         </section>
+
+         <!-- How to use  -->
+         <section class="use grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+            <div class="align-center col-span-1 grid place-content-center">
+               <h1
+                  class="font-bold libre-baskerville-regular lg:text-2xl md:text-2xl text-lg my-3"
+               >
+                  How to Recycle with US!
+               </h1>
+
+               <h3
+                  class="italics text-base text-primary prompt-regular tracking-wide"
+               >
+                  Please follow the following steps:
+               </h3>
+
+               <ol
+                  type="1"
+                  class="prompt-regular text-lg list-decimal list-inside"
+               >
+                  <li>
+                     Approach the
+                     <span class="text-primary libre-baskerville-regular">
+                        RECICLAR
+                     </span>
+                     Sign posts located at our designated recycling area.
+                  </li>
+                  <li>
+                     Enter your phone number into the designated field on the
+                     machine.
+                  </li>
+                  <li>
+                     Hold the bottle with the barcode side facing the machine's
+                     scanner.
+                  </li>
+                  <li>
+                     Wait for the scanner to scan the barcode. You will receive
+                     5 Kenyan shillings for every bottle scanned, credited
+                     directly to your <span class=""></span> M-Pesa account.
+                  </li>
+                  <li>
+                     Once scanned, place the bottle inside the slot provided on
+                     the machine.
+                  </li>
+                  <li>
+                     Repeat the process for each additional bottle you wish to
+                     recycle.
+                  </li>
+               </ol>
+            </div>
+
+            <div class="col-span-1 w-full h-full grid place-content-center">
+               <dotlottie-player
+                  src="https://lottie.host/0442450f-cb04-4094-b419-56ca8e5dbaf7/jFJ1EJadAP.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 300px; height: 300px"
+                  loop
+                  autoplay
+               ></dotlottie-player>
+            </div>
+         </section>
+
+         <!-- section about us  -->
+         <section class="my-4 about relative">
+
+            <div class="about_content absolute grid place-content-center">
+               <h2 class="prompt-regular lg:text-xl md:text-2xl text-lg">About <span class="text-primary prompt-regular">
+                  RECICLAR </span>
+               </h2>
+
+               <p class="text-base e244">
+                  <span class="text-9xl m-0 p-0 "> &#x201C;</span>
+                  <br>                  
+                  At <span class="text-primary prompt-regular">RECICLAR</span>, we are committed to making a positive impact on the environment through plastic bottle recycling. At our facility, we believe in the power of innovation and technology to drive sustainable practices and create a cleaner, greener future for generations to come. <br>
+                  Our mission is simple: <em class="text-main">to incentivize and encourage plastic bottle recycling by implementing an innovative barcode scanning system.</em> With each bottle scanned, recyclers are rewarded with 5 Kenyan Shillings directly deposited into their MPESA accounts. This not only provides a financial incentive for recycling but also promotes a sense of responsibility and engagement in environmental conservation efforts. <br>
+                  At <span class="text-primary prompt-regular">RECICLAR</span>, we understand the importance of recycling in reducing plastic waste and protecting our planet's precious resources. By recycling plastic bottles, we help to minimize pollution, conserve energy, and reduce the demand for new plastic production. Through our barcode scanning system, we make the recycling process convenient, efficient, and rewarding for individuals and communities alike. <br>
+                  Our commitment to sustainability extends beyond recycling; we also strive to educate and raise awareness about the importance of environmental conservation. Through community outreach programs, school initiatives, and educational campaigns, we aim to inspire individuals to take action and make a difference in their daily lives. <br> Join us in our mission to create a cleaner, healthier planet for future generations. Together, we can make a significant impact on plastic pollution and build a more sustainable world for all.
+               </br>
+                  <span class="text-9xl m-0 p-0 float-right"> &#x201D;</span>
+               </p>
             </div>
          </section>
       </main>
 
       <!-- lottie file  -->
+      <script
+         src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+         type="module"
+      ></script>
       <script
          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
          type="module"
