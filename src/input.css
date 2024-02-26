@@ -78,13 +78,13 @@ li a:hover {
 }
 
 /* logo  */
-nav__logo {
+/* nav__logo {
    cursor: pointer;
    color: #003500;
    font-family: "Libre Baskerville", serif;
    font-weight: bold;
    font-size: large;
-}
+} */
 
 /* menu icon  */
 .menu {

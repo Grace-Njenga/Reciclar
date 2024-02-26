@@ -909,13 +909,13 @@ video {
 
 /* logo  */
 
-nav__logo {
-  cursor: pointer;
-  color: #003500;
-  font-family: "Libre Baskerville", serif;
-  font-weight: bold;
-  font-size: large;
-}
+/* nav__logo {
+   cursor: pointer;
+   color: #003500;
+   font-family: "Libre Baskerville", serif;
+   font-weight: bold;
+   font-size: large;
+} */
 
 /* menu icon  */
 
