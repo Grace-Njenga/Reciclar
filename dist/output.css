@@ -608,6 +608,10 @@ video {
   grid-column: span 1 / span 1;
 }
 
+.row-span-1{
+  grid-row: span 1 / span 1;
+}
+
 .float-right{
   float: right;
 }
@@ -690,6 +694,14 @@ video {
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-1{
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .place-content-center{
@@ -989,6 +1001,25 @@ video {
   bottom: -5px;
 }
 
+/* section why recycle  */
+
+.recycle{
+  width: 70%;
+  margin: 0 auto;
+  padding: 2em 0;
+  position: relative;
+}
+
+.recycle .content_title::after{
+  background-color: #295f29;
+}
+
+/* gallery section  */
+
+.gallery .content_title::after{
+  background-color: #295f29;
+}
+
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1019,8 +1050,20 @@ video {
     order: 1;
   }
 
+  .md\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .md\:col-span-3{
     grid-column: span 3 / span 3;
+  }
+
+  .md\:row-span-1{
+    grid-row: span 1 / span 1;
+  }
+
+  .md\:row-span-2{
+    grid-row: span 2 / span 2;
   }
 
   .md\:m-0{
@@ -1039,6 +1082,10 @@ video {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .md\:grid-rows-3{
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1055,8 +1102,16 @@ video {
     order: -2;
   }
 
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
   .lg\:col-span-6{
     grid-column: span 6 / span 6;
+  }
+
+  .lg\:row-span-2{
+    grid-row: span 2 / span 2;
   }
 
   .lg\:m-0{
@@ -1073,6 +1128,10 @@ video {
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-6{
+    grid-template-rows: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:text-2xl{

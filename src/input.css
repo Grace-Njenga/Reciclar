@@ -146,3 +146,19 @@ li a:hover {
    left: 0;
    bottom: -5px;
 }
+
+/* section why recycle  */
+.recycle{
+   width: 70%;
+   margin: 0 auto;
+   padding: 2em 0;
+   position: relative;
+}
+.recycle .content_title::after{
+   background-color: #295f29;
+}
+
+/* gallery section  */
+.gallery .content_title::after{
+   background-color: #295f29;
+}
