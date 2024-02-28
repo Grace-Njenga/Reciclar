@@ -126,6 +126,9 @@ li a:hover {
    width: 70%;
    margin: 0 auto;
 }
+.use .content_title::after{
+   background-color: #9bd673;
+}
 
 /* about us section  */
 .about_content {
@@ -141,7 +144,7 @@ li a:hover {
    content: '';
    position: absolute;
    height: 2px;
-   background-color: whitesmoke;
+   background-color: rgb(244, 241, 241);
    width: 100%;
    left: 0;
    bottom: -5px;
@@ -162,3 +165,12 @@ li a:hover {
 .gallery .content_title::after{
    background-color: #295f29;
 }
+.tooltip-content{
+   display: none;
+   padding: 1em;
+   height: 100px;
+   z-index: 1;
+}
+.tooltip-container:hover .tooltip-content {
+   display: block;
+ }

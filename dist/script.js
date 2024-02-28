@@ -28,5 +28,22 @@ const swiper = new Swiper(".swiper", {
    },
 });
 
+//tool-tip hover effect
+function showTooltip(event) {
+   const tooltipContainer = document.querySelector(".tooltip-container");
+   const tooltipContent = tooltipContainer.querySelector(".tooltip-content");
+   tooltipContent.style.display = "block";
+   tooltipContent.style.left = event.clientX + 10 + "px"; // Adjust positioning as needed
+   tooltipContent.style.top = event.clientY + 10 + "px"; // Adjust positioning as needed
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+   const tooltipContainer = document.querySelector(".tooltip-container");
+   const tooltipContent = tooltipContainer.querySelector(".tooltip-content");
+   tooltipContainer.addEventListener("mouseleave", function () {
+      tooltipContent.style.display = "none";
+   });
+});
+
 // initialize aos
 AOS.init();

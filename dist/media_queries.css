@@ -32,7 +32,8 @@
     .swiper-slide{
         padding-right: 0px;
     }
-    .use{
+    .use,
+    .recycle{
         width: 90%;
         margin: 0 auto;
      }
