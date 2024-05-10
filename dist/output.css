@@ -1,5 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Prompt:wght@300;400&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap");
 
+/* CSS reset  */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
 * {
   /*background-color: rgb(40, 121, 40);*/
   box-sizing: border-box;
@@ -28,7 +60,7 @@ li a:hover {
   color: #003500;
 }
 
-/*! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com*/
+/* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com  */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
