@@ -1,6 +1,6 @@
 @media (max-width: 500px) and (min-width: 200px){
     .nav{
-        position: fixed;
+        position: fixed !important;
         inset: 0 0 0 30%;
         flex-direction: column;
         background: rgba(40, 122, 40, 0.29);
@@ -16,6 +16,7 @@
         transform: translateX(0%);
     }
     .menu{
+        position: fixed;
         display: block;
         position: absolute;
         width: 2rem;

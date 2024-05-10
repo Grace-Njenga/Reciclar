@@ -664,6 +664,10 @@ video {
   margin-right: 1rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .block{
   display: block;
 }
@@ -706,6 +710,10 @@ video {
 
 .grid-rows-1{
   grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-3{
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .place-content-center{
@@ -985,12 +993,16 @@ video {
 
 /* use section  */
 
-.use {
-  width: 70%;
-  margin: 0 auto;
+.header-use{
+  margin-top: 2em;
 }
 
-.use .content_title::after{
+/* .use {
+   width: 0%;
+   margin: 0 auto;
+} */
+
+.header-use .content_title::after{
   background-color: #9bd673;
 }
 
@@ -1001,6 +1013,8 @@ video {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.2px);
   -webkit-backdrop-filter: blur(6.2px);
+  /* max-height: 500px; */
+  overflow: hidden;
 }
 
 .content_title{
@@ -1015,6 +1029,14 @@ video {
   width: 100%;
   left: 0;
   bottom: -5px;
+}
+
+.expanded {
+  max-height: none;
+}
+
+.expand-button {
+  display: none;
 }
 
 /* section why recycle  */
@@ -1256,8 +1278,8 @@ video {
     margin-left: 1rem;
   }
 
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-6{
@@ -1310,6 +1332,14 @@ video {
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-1{
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:grid-rows-6{

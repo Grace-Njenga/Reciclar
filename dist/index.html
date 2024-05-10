@@ -1,605 +1,710 @@
 <!DOCTYPE html>
 <html lang="en-uk">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!-- CSS styles sheet -->
-      <link href="output.css" rel="stylesheet" />
+    <!-- CSS styles sheet -->
+    <link href="output.css" rel="stylesheet" />
 
-      <!-- media queries css  -->
-      <link rel="stylesheet" href="media_queries.css" />
+    <!-- media queries css  -->
+    <link rel="stylesheet" href="media_queries.css" />
 
-      <!-- swiper js -->
-      <link
-         rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-      <!-- animate on scroll  -->
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- animate on scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-      <!-- fav icon  -->
-      <link rel="icon" href="./img/leaf-outline.svg" type="image/svg" />
+    <!-- fav icon  -->
+    <link rel="icon" href="./img/leaf-outline.svg" type="image/svg" />
 
-      <title>Reciclar</title>
-   </head>
-   <body class="yrsa-regular">
-      <!-- header section  -->
-      <section class="">
-         <header class="m-4 relative flex justify-between self-center">
-            <!-- logo  -->
-            <div class="flex self-center">
-               <h1
-                  class="libre-baskerville-regular text-main font-extrabold tracking-wider"
-               >
-                  RECICLAR
-               </h1>
-            </div>
+    <title>Reciclar</title>
+  </head>
+  <body class="yrsa-regular">
+    <!-- header section  -->
+    <section class="">
+      <header class="m-4 relative flex justify-between self-center">
+        <!-- logo  -->
+        <div class="flex self-center">
+          <h1
+            class="libre-baskerville-regular text-main font-extrabold tracking-wider"
+          >
+            RECICLAR
+          </h1>
+        </div>
 
-            <!-- menu icon  -->
-            <ion-icon
-               name="menu-sharp"
-               class="menu text-3xl text-accent"
-               aria-controls="icon-menu"
-               aria-expanded="false"
-               size="large"
-            ></ion-icon>
+        <!-- menu icon  -->
+        <ion-icon
+          name="menu-sharp"
+          class="menu text-3xl text-accent"
+          aria-controls="icon-menu"
+          aria-expanded="false"
+          size="large"
+        ></ion-icon>
 
-            <!-- navigation bar  -->
-            <nav class="flex">
-               <ul
-                  id="icon-menu"
-                  data-visible="false"
-                  class="nav flex py-2 gap-6"
-               >
-                  <li
-                     class="mr-4 hover:text-orangey transition-transform relative hover:scale-110 lg:ml-4 md:ml-4 ml-0"
-                  >
-                     <a href="#home" class="">Home</a>
-                  </li>
-                  <li
-                     class="mr-4 hover:text-orangey transition-transform relative hover:scale-110"
-                  >
-                     <a href="#about" class="">About Us</a>
-                  </li>
-                  <li
-                     class="mr-4 hover:text-orangey transition-transform relative hover:scale-110"
-                  >
-                     <a href="#gallery" class="">Gallery</a>
-                  </li>
-                  <li
-                     class="mr-4 hover:text-orangey transition-transform relative hover:scale-110"
-                  >
-                     <a href="#contact" class="">Contact Us</a>
-                  </li>
-                  <li
-                     class="mr-4 hover:text-orangey transition-transform relative hover:scale-110"
-                  >
-                     <a
-                        href="#"
-                        class="hover:text-hover hover:font-semibold bg-primary px-2 py-3 rounded-md hover:bg-accent text-xl font-normal text-white"
-                        >Scan A Bottle</a
-                     >
-                  </li>
-               </ul>
-            </nav>
-         </header>
+        <!-- navigation bar  -->
+        <nav class="flex">
+          <ul id="icon-menu" data-visible="false" class="nav flex py-2 gap-6">
+            <li
+              class="mr-4 hover:text-orangey transition-transform relative hover:scale-110 lg:ml-4 md:ml-4 ml-0"
+            >
+              <a href="#home" class="">Home</a>
+            </li>
+            <li
+              class="mr-4 hover:text-orangey transition-transform relative hover:scale-110"
+            >
+              <a href="#about" class="">About Us</a>
+            </li>
+            <li
+              class="mr-4 hover:text-orangey transition-transform relative hover:scale-110"
+            >
+              <a href="#gallery" class="">Gallery</a>
+            </li>
+            <li
+              class="mr-4 hover:text-orangey transition-transform relative hover:scale-110"
+            >
+              <a href="#contact" class="">Contact Us</a>
+            </li>
+            <li
+              class="mr-4 hover:text-orangey transition-transform relative hover:scale-110"
+            >
+              <a
+                href="#"
+                class="hover:text-hover hover:font-semibold bg-primary px-2 py-3 rounded-md hover:bg-accent text-xl font-normal text-white"
+                >Scan A Bottle</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <main class="mx-4">
+      <!-- data-aos="fade-up" -->
+      <section
+        class="relative grid lg:grid-cols-12 md:grid-cols-6 grid-cols-1 gap-3 m-2"
+      >
+        <!-- hero section  -->
+        <div
+          class="lg:col-span-6 md:col-span-3 col-span-1 text-base grid place-content-center lg:-order-2 md:order-1 m-2"
+        >
+          <h2 class="text-2xl prompt-regular my-2">Save The Planet</h2>
+          <p class="text-xl my-3">
+            At<span class="text-primary libre-baskerville-regular">
+              RECICLAR </span
+            >we are dedicated to promoting and encouraging plastic recycling.
+            Learn about the importance of recycling plastics, explore innovative
+            initiatives,and join us in creating a sustainable future by
+            embracing a culture of plastic recycling.
+          </p>
+          <div class="button">
+            <a
+              href="#"
+              class="hover:text-accent hover:font-semibold bg-hover px-2 py-3 rounded-md mr-4 text-xl font-normal text-primary"
+              >Learn More</a
+            >
+            <a
+              href="#"
+              class="hover:text-hover hover:font-semibold bg-primary px-2 py-3 rounded-md hover:bg-accent text-xl font-normal text-white"
+              >Scan A Bottle</a
+            >
+          </div>
+        </div>
+
+        <!-- lottie file  -->
+        <div
+          class="h-full w-full lg:col-span-6 md:col-span-3 col-span-1 grid place-content-center"
+        >
+          <dotlottie-player
+            src="https://lottie.host/a69d73e2-5426-4549-aaa4-84440f133f06/pMcz64sUih.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 300px"
+            loop
+            class="w-full h-full"
+            autoplay
+          ></dotlottie-player>
+
+          <div class="my-4">
+            <h3 class="italic text-center text-main">
+              <span class="font-bold text-primary">SLOGAN:</span> Plastic
+              Riches, Empowering Sustainable Futures
+            </h3>
+          </div>
+        </div>
       </section>
 
-      <main class="mx-4">
-         <!-- data-aos="fade-up" -->
-         <section
-            class="relative  grid lg:grid-cols-12 md:grid-cols-6 grid-cols-1 gap-3 m-2"
-         >
-            <!-- hero section  -->
-            <div
-               class="lg:col-span-6 md:col-span-3 col-span-1 text-base grid place-content-center lg:-order-2 md:order-1 m-2"
-            >
-               <h2 class="text-2xl prompt-regular my-2">Save The Planet</h2>
-               <p class="text-xl my-3">
+      <!-- section resolve, approach and story -->
+      <section
+        class="mb-4 grid lg:grid-cols-12 md:grid-cols-6 grid-cols-1 h-[min]"
+      >
+        <!-- slide 1 -->
+        <!-- Slider main container -->
+        <div
+          class="lg:col-span-6 md:col-span-3 col-span-1 h-full w-full swiper"
+        >
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide bg-white px-3">
+              <!-- content  -->
+              <div class="h-full w-full grid place-content-center px-2">
+                <h2 class="font-bold text-2xl my-3 prompt-regular">
+                  Our Vision
+                </h2>
+                <p class="text-lg">
                   At<span class="text-primary libre-baskerville-regular">
-                     RECICLAR </span
-                  >we are dedicated to promoting and encouraging plastic
-                  recycling. Learn about the importance of recycling plastics,
-                  explore innovative initiatives,and join us in creating a
-                  sustainable future by embracing a culture of plastic
-                  recycling.
-               </p>
-               <div class="button">
-                  <a
-                     href="#"
-                     class="hover:text-accent hover:font-semibold bg-hover px-2 py-3 rounded-md mr-4 text-xl font-normal text-primary"
-                     >Learn More</a
-                  >
-                  <a
-                     href="#"
-                     class="hover:text-hover hover:font-semibold bg-primary px-2 py-3 rounded-md hover:bg-accent text-xl font-normal text-white"
-                     >Scan A Bottle</a
-                  >
-               </div>
+                    RECICLAR
+                  </span>
+                  , our vision is to create a sustainable future by transforming
+                  society's perception of recycling. We inspire individuals to
+                  embrace a culture of recycling through innovative incentives
+                  and seamless processes. Our goal is to minimize the harmful
+                  effects of plastic waste, conserve resources, and raise
+                  environmental consciousness. Together, we can build a
+                  harmonious coexistence between humanity and nature,
+                  contributing to a cleaner, healthier, and more sustainable
+                  planet.
+                </p>
+              </div>
             </div>
 
-            <!-- lottie file  -->
-            <div
-               class="h-full w-full lg:col-span-6 md:col-span-3 col-span-1 grid place-content-center"
+            <!-- slide 2  -->
+            <div class="swiper-slide bg-white px-3">
+              <!-- content  -->
+              <div class="h-full w-full grid place-content-center px-2">
+                <h2 class="font-bold text-2xl my-3 prompt-regular">
+                  Our Story
+                </h2>
+                <p class="text-lg">
+                  At<span class="text-primary libre-baskerville-regular">
+                    RECICLAR
+                  </span>
+                  , we began with a passion for environmental preservation and a
+                  mission to revolutionize recycling. We developed a unique
+                  system that incentivizes recycling, offering 5 shillings for
+                  every plastic bottle recycled. By integrating technology and
+                  forming partnerships, we've made the process seamless and
+                  rewarding. Together with our community, we're driving change,
+                  prioritizing sustainability, and building a brighter future.
+                </p>
+              </div>
+            </div>
+
+            <!-- slide 3  -->
+            <div class="swiper-slide bg-white px-3">
+              <!-- content  -->
+              <div
+                class="h-full w-full grid place-content-center px-2 lg:m-0 md:m-0 mb-10"
+              >
+                <h2 class="font-bold text-2xl my-3 prompt-regular">
+                  Our Approach
+                </h2>
+                <p class="text-lg">
+                  At<span class="text-primary libre-baskerville-regular">
+                    RECICLAR
+                  </span>
+                  , we take a proactive and holistic approach to driving
+                  positive change in recycling, waste management, and
+                  sustainability. Our approach includes education, innovative
+                  incentives, seamless technology integration, collaborative
+                  partnerships, environmental stewardship, and continuous
+                  innovation. Together, these elements drive our commitment to
+                  creating a greener, more sustainable future.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- side 2  -->
+        <div class="lg:col-span-6 md:col-span-3 col-span-1 h-full w-full">
+          <img
+            src="./img/trash_throwing.jpg"
+            alt=""
+            class="h-full w-full object-cover"
+            style="max-width: 100%; max-height: 100%; object-fit: cover"
+          />
+        </div>
+      </section>
+
+      <!-- How to use  -->
+      <section class="header-use mt-4">
+        <div class="">
+          <h2
+          class="content_title font-bold libre-baskerville-regular lg:text-2xl md:text-2xl text-lg my-3"
+        >
+          How to Recycle with US!
+        </h2>
+
+        <h3
+          class="italics text-base text-primary prompt-regular tracking-wide my-3"
+        >
+          Please follow the following steps:
+        </h3>
+        </div>
+       
+        <!-- part one list  -->
+        <div
+          class="use grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:grid-rows-1 md:grid-rows1 grid-rows-3"
+        >
+          <div class="align-center col-span-1 grid place-content-center">
+            <ol
+              type="1"
+              class="prompt-light lg:text-xl md:text-2xl text-lg list-decimal list-inside"
             >
-               <dotlottie-player
-                  src="https://lottie.host/a69d73e2-5426-4549-aaa4-84440f133f06/pMcz64sUih.json"
-                  background="transparent"
-                  speed="1"
-                  style="width: 100%; height: 300px"
-                  loop
-                  class="w-full h-full"
-                  autoplay
-               ></dotlottie-player>
+              <li>
+                Approach the
+                <span class="text-primary libre-baskerville-regular">
+                  RECICLAR
+                </span>
+                Sign posts located at our designated recycling area.
+              </li>
+              <li>
+                Enter your phone number into the designated field on the
+                machine.
+              </li>
+              <li>
+                Hold the bottle with the barcode side facing the machine's
+                scanner.
+              </li>
+            </ol>
+          </div>
 
-               <div class="my-4">
-                  <h3 class="italic text-center text-main">
-                     <span class="font-bold text-primary">SLOGAN:</span> Plastic
-                     Riches, Empowering Sustainable Futures
-                  </h3>
-               </div>
-            </div>
-         </section>
+          <div class="col-span-1 w-full h-full grid place-content-center">
+            <dotlottie-player
+              src="https://lottie.host/0442450f-cb04-4094-b419-56ca8e5dbaf7/jFJ1EJadAP.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
 
-         <!-- section resolve, approach and story -->
-         <section
-            class="mb-4 grid lg:grid-cols-12 md:grid-cols-6 grid-cols-1 h-[min]"
-         >
-            <!-- slide 1 -->
-            <!-- Slider main container -->
-            <div
-               class="lg:col-span-6 md:col-span-3 col-span-1 h-full w-full swiper"
+          <div class="align-center col-span-1 grid place-content-center">
+            <ol
+              type="1"
+              class="prompt-light lg:text-xl md:text-2xl text-lg list-decimal list-inside"
+              start="4"
             >
-               <!-- Additional required wrapper -->
-               <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide bg-white px-3">
-                     <!-- content  -->
-                     <div class="h-full w-full grid place-content-center px-2">
-                        <h2 class="font-bold text-2xl my-3 prompt-regular">
-                           Our Vision
-                        </h2>
-                        <p class="text-lg">
-                           At<span
-                              class="text-primary libre-baskerville-regular"
-                           >
-                              RECICLAR
-                           </span>
-                           , our vision is to create a sustainable future by
-                           transforming society's perception of recycling. We
-                           inspire individuals to embrace a culture of recycling
-                           through innovative incentives and seamless processes.
-                           Our goal is to minimize the harmful effects of
-                           plastic waste, conserve resources, and raise
-                           environmental consciousness. Together, we can build a
-                           harmonious coexistence between humanity and nature,
-                           contributing to a cleaner, healthier, and more
-                           sustainable planet.
-                        </p>
-                     </div>
-                  </div>
+              <li>
+                Wait for the scanner to scan the barcode. You will receive 5
+                Kenyan shillings for every bottle scanned, credited directly to
+                your <span class=""></span> M-Pesa account.
+              </li>
+              <li>
+                Once scanned, place the bottle inside the slot provided on the
+                machine.
+              </li>
+              <li>
+                Repeat the process for each additional bottle you wish to
+                recycle.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- section about us  -->
+      <section id="about" class="my-4">
+        <div class="about_content grid place-content-center p-3">
+          <h2
+            class="content_title prompt-regular lg:text-2xl md:text-2xl text-lg my-2"
+          >
+            About
+            <span class="text-primary prompt-regular"> RECICLAR </span>
+          </h2>
 
-                  <!-- slide 2  -->
-                  <div class="swiper-slide bg-white px-3">
-                     <!-- content  -->
-                     <div class="h-full w-full grid place-content-center px-2">
-                        <h2 class="font-bold text-2xl my-3 prompt-regular">
-                           Our Story
-                        </h2>
-                        <p class="text-lg">
-                           At<span
-                              class="text-primary libre-baskerville-regular"
-                           >
-                              RECICLAR
-                           </span>
-                           , we began with a passion for environmental
-                           preservation and a mission to revolutionize
-                           recycling. We developed a unique system that
-                           incentivizes recycling, offering 5 shillings for
-                           every plastic bottle recycled. By integrating
-                           technology and forming partnerships, we've made the
-                           process seamless and rewarding. Together with our
-                           community, we're driving change, prioritizing
-                           sustainability, and building a brighter future.
-                        </p>
-                     </div>
-                  </div>
+          <p class="lg:text-2xl md:text-2xl text-lg">
+            <span class="text-9xl m-0 p-0"> &#x201C;</span> <br />
+            At <span class="text-primary prompt-regular">RECICLAR</span>, we are
+            committed to making a positive impact on the environment through
+            plastic bottle recycling. At our facility, we believe in the power
+            of innovation and technology to drive sustainable practices and
+            create a cleaner, greener future for generations to come.Our mission
+            is simple:
+            <em class="text-main"
+              >to incentivize and encourage plastic bottle recycling by
+              implementing an innovative barcode scanning system.</em
+            >
+            With each bottle scanned, recyclers are rewarded with 5 Kenyan
+            Shillings directly deposited into their MPESA accounts. This not
+            only provides a financial incentive for recycling but also promotes
+            a sense of responsibility and engagement in environmental
+            conservation efforts. <br />At
+            <span class="text-primary prompt-regular">RECICLAR</span>, we
+            understand the importance of recycling in reducing plastic waste and
+            protecting our planet's precious resources. By recycling plastic
+            bottles, we help to minimize pollution, conserve energy, and reduce
+            the demand for new plastic production. Through our barcode scanning
+            system, we make the recycling process convenient, efficient, and
+            rewarding for individuals and communities alike. <br />Our
+            commitment to sustainability extends beyond recycling; we also
+            strive to educate and raise awareness about the importance of
+            environmental conservation. Through community outreach programs,
+            school initiatives, and educational campaigns, we aim to inspire
+            individuals to take action and make a difference in their daily
+            lives. <br />
+            Join us in our mission to create a cleaner, healthier planet for
+            future generations. Together, we can make a significant impact on
+            plastic pollution and build a more sustainable world for all.
+            <br />
+            <span class="text-9xl m-0 p-0 float-right"> &#x201D;</span>
+          </p>
+          <button class="expand-button" onclick="toggleExpand()">
+            Read More
+          </button>
+        </div>
+      </section>
 
-                  <!-- slide 3  -->
-                  <div class="swiper-slide bg-white px-3">
-                     <!-- content  -->
-                     <div
-                        class="h-full w-full grid place-content-center px-2 lg:m-0 md:m-0 mb-10"
-                     >
-                        <h2 class="font-bold text-2xl my-3 prompt-regular">
-                           Our Approach
-                        </h2>
-                        <p class="text-lg">
-                           At<span
-                              class="text-primary libre-baskerville-regular"
-                           >
-                              RECICLAR
-                           </span>
-                           , we take a proactive and holistic approach to
-                           driving positive change in recycling, waste
-                           management, and sustainability. Our approach includes
-                           education, innovative incentives, seamless technology
-                           integration, collaborative partnerships,
-                           environmental stewardship, and continuous innovation.
-                           Together, these elements drive our commitment to
-                           creating a greener, more sustainable future.
-                        </p>
-                     </div>
-                  </div>
-               </div>
+      <!-- why recycle  -->
+      <section class="recycle">
+        <div class="">
+          <h2
+            class="my-3 content_title prompt-regular lg:text-2xl md:text-2xl text-xl font-bold"
+          >
+            Why Recycle?
+          </h2>
 
-               <!-- If we need pagination -->
-               <div class="swiper-pagination"></div>
+          <h3 class="my-4 italic text-center text-main">
+            <span class="font-bold text-primary">SLOGAN:</span> Plastic Riches,
+            Empowering Sustainable Futures
+          </h3>
+
+          <p class="lg:text-2xl md:text-xl text-lg">
+            Recycling is crucial for preserving our environment and conserving
+            natural resources. By recycling, we reduce waste, save energy, and
+            decrease pollution, contributing to a healthier planet for future
+            generations.
+          </p>
+          <br />
+
+          <ul
+            class="list-decimal list-inside lg:text-2xl md:text-xl text-lg grid grid-cols-1 lg:grid-cols-2 gap-3"
+          >
+            <li class="col-span-1">
+              <em class="font-bold text-main">Decreasing Pollution: </em
+              >Recycling reduces the need for extracting, refining, and
+              processing raw materials, which can result in significant
+              environmental pollution. For instance, mining for metals like
+              aluminum and copper can lead to habitat destruction, water
+              pollution, and soil contamination. By recycling these materials,
+              we lessen the environmental impact associated with their
+              extraction and processing.
+            </li>
+
+            <li class="col-span-1">
+              <em class="font-bold text-main">Saving Energy: </em>Producing new
+              products from recycled materials often requires less energy
+              compared to manufacturing from raw materials. For example,
+              recycling aluminum cans saves up to 95% of the energy required to
+              produce aluminum from raw materials. By conserving energy in the
+              recycling process, we reduce greenhouse gas emissions and combat
+              climate change.
+            </li>
+
+            <li class="col-span-1">
+              <em class="font-bold text-main">Reducing Waste: </em>Recycling
+              helps divert materials from landfills, where they would otherwise
+              take up space and contribute to pollution. By recycling items like
+              plastic bottles, paper, and metal cans, we reduce the amount of
+              waste sent to landfills, helping to preserve valuable land and
+              resources.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- section Gallery  -->
+      <section id="gallery" class="my-4">
+        <div class="gallery">
+          <h2
+            class="my-3 content_title prompt-regular lg:text-2xl md:text-2xl text-xl font-bold"
+          >
+            Our Gallery
+          </h2>
+        </div>
+
+        <div
+          class="grid lg:grid-cols-12 md:grid-cols-6 grid-cols-2 lg:grid-rows-6 md:grid-rows-3 grid-rows-1 gap-3"
+        >
+          <!-- image one  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/HANDS.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <!-- hover class  -->
+            <div class="right">
+              <div class="text-content">
+                <h2 class="font-bold">Project Trees</h2>
+                <h3>Initiative to Plant More trees to save the planet</h3>
+                <i></i>
+              </div>
             </div>
+          </div>
 
-            <!-- side 2  -->
-            <div class="lg:col-span-6 md:col-span-3 col-span-1 h-full w-full">
-               <img
-                  src="./img/trash_throwing.jpg"
-                  alt=""
-                  class="h-full w-full object-cover" style="max-width: 100%; max-height: 100%; object-fit: cover;"
-               />
+          <!-- image two  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/reciclar-for-waste-recycling-where-we-give-you-5-s-pMvG3mulSzGW8rb0ABbySA-Alk_gnisSoe2yWT0lzo2eQ.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+
+            <!-- hover class  -->
+            <div class="lg:right md:left left">
+              <div class="text-content">
+                <h2 class="font-bold">Reciclar Poster</h2>
+                <h3>Initiative to Plant More trees to save the planet</h3>
+                <i></i>
+              </div>
             </div>
-         </section>
+          </div>
 
-         <!-- How to use  -->
-         <section class="use grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
-            <div class="align-center col-span-1 grid place-content-center">
-               <h2
-                  class="content_title font-bold libre-baskerville-regular lg:text-2xl md:text-2xl text-lg my-3"
-               >
-                  How to Recycle with US!
-               </h2>
+          <!-- image three  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/a-creative-display-of-toys-crafted-from-upcycled-p-nVrtZSCVSEqIlTxw3NXD5g-f9KLyCwgTE2h5OPnV_1uoA.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
 
-               <h3
-                  class="italics text-base text-primary prompt-regular tracking-wide my-3"
-               >
-                  Please follow the following steps:
-               </h3>
+            <!-- hover class  -->
+            <div class="top">
+              <div class="text-content">
+                <h2 class="font-bold">Project Toys</h2>
+                <h3>Initiative to Plant More trees to save the planet</h3>
 
-               <ol
-                  type="1"
-                  class="prompt-light lg:text-xl md:text-2xl text-lg list-decimal list-inside"
-               >
-                  <li>
-                     Approach the
-                     <span class="text-primary libre-baskerville-regular">
-                        RECICLAR
-                     </span>
-                     Sign posts located at our designated recycling area.
-                  </li>
-                  <li>
-                     Enter your phone number into the designated field on the
-                     machine.
-                  </li>
-                  <li>
-                     Hold the bottle with the barcode side facing the machine's
-                     scanner.
-                  </li>
-                  <li>
-                     Wait for the scanner to scan the barcode. You will receive
-                     5 Kenyan shillings for every bottle scanned, credited
-                     directly to your <span class=""></span> M-Pesa account.
-                  </li>
-                  <li>
-                     Once scanned, place the bottle inside the slot provided on
-                     the machine.
-                  </li>
-                  <li>
-                     Repeat the process for each additional bottle you wish to
-                     recycle.
-                  </li>
-               </ol>
+                <i></i>
+              </div>
             </div>
+          </div>
 
-            <div class="col-span-1 w-full h-full grid place-content-center">
-               <dotlottie-player
-                  src="https://lottie.host/0442450f-cb04-4094-b419-56ca8e5dbaf7/jFJ1EJadAP.json"
-                  background="transparent"
-                  speed="1"
-                  style="width: 300px; height: 300px"
-                  loop
-                  autoplay
-               ></dotlottie-player>
+          <!-- image four  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/a-heartwarming-poster-depicting-a-group-of-happy-d-Xs3EmeBHQUiyAxz6v5c2Hw-c5k06xxBSEmsSt4Y1fJdlQ.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+
+            <!-- hover class  -->
+            <div class="top">
+              <div class="text-content">
+                <h2 class="font-bold">Project Trees</h2>
+                <h3>Initiative to Plant More trees to save the planet</h3>
+                <i></i>
+              </div>
             </div>
-         </section>
+          </div>
 
-         <!-- section about us  -->
-         <section id="about" class="my-4">
-            <div class="about_content grid place-content-center p-3">
-               <h2
-                  class="content_title prompt-regular lg:text-2xl md:text-2xl text-lg my-2"
-               >
-                  About
-                  <span class="text-primary prompt-regular"> RECICLAR </span>
-               </h2>
+          <!-- image five  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/a-remarkable-before-and-after-transformation-of-a--gXyBKaUvS3GOks0iJFLa9w-M-SWmdMnSuyfYezYh9xEow.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
 
-               <p class="lg:text-2xl md:text-2xl text-lg">
-                  <span class="text-9xl m-0 p-0"> &#x201C;</span> <br />
-                  At <span class="text-primary prompt-regular">RECICLAR</span>,
-                  we are committed to making a positive impact on the
-                  environment through plastic bottle recycling. At our facility,
-                  we believe in the power of innovation and technology to drive
-                  sustainable practices and create a cleaner, greener future for
-                  generations to come.Our mission is simple:
-                  <em class="text-main"
-                     >to incentivize and encourage plastic bottle recycling by
-                     implementing an innovative barcode scanning system.</em
-                  >
-                  With each bottle scanned, recyclers are rewarded with 5 Kenyan
-                  Shillings directly deposited into their MPESA accounts. This
-                  not only provides a financial incentive for recycling but also
-                  promotes a sense of responsibility and engagement in
-                  environmental conservation efforts. <br />At
-                  <span class="text-primary prompt-regular">RECICLAR</span>, we
-                  understand the importance of recycling in reducing plastic
-                  waste and protecting our planet's precious resources. By
-                  recycling plastic bottles, we help to minimize pollution,
-                  conserve energy, and reduce the demand for new plastic
-                  production. Through our barcode scanning system, we make the
-                  recycling process convenient, efficient, and rewarding for
-                  individuals and communities alike. <br />Our commitment to
-                  sustainability extends beyond recycling; we also strive to
-                  educate and raise awareness about the importance of
-                  environmental conservation. Through community outreach
-                  programs, school initiatives, and educational campaigns, we
-                  aim to inspire individuals to take action and make a
-                  difference in their daily lives. <br />
-                  Join us in our mission to create a cleaner, healthier planet
-                  for future generations. Together, we can make a significant
-                  impact on plastic pollution and build a more sustainable world
-                  for all.
-                  <br />
-                  <span class="text-9xl m-0 p-0 float-right"> &#x201D;</span>
-               </p>
+            <!-- hover class  -->
+            <div class="right">
+              <div class="text-content">
+                <h2 class="font-bold">Project Change</h2>
+                <h3>Before and after after a cleanup we did on street zilo</h3>
+                <i></i>
+              </div>
             </div>
-         </section>
+          </div>
 
-         <!-- why recycle  -->
-         <section class="recycle">
-            <div class="">
-               <h2 class="my-3 content_title prompt-regular lg:text-2xl md:text-2xl text-xl font-bold">Why Recycle?</h2>
+          <!-- image six  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/a-striking-photo-of-innovative-furniture-pieces-cr-ZX-AATT8TG6yQiJybGR-RQ-GHi00OMHTP-HRoA-oVBYLA.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
 
-               <h3 class="my-4 italic text-center text-main">
-                  <span class="font-bold text-primary">SLOGAN:</span> Plastic
-                  Riches, Empowering Sustainable Futures
-               </h3>
-
-               <p class="lg:text-2xl md:text-xl text-lg">Recycling is crucial for preserving our environment and conserving natural resources. By recycling, we reduce waste, save energy, and decrease pollution, contributing to a healthier planet for future generations.</p>
-               <br>
-
-               <ul class="list-decimal list-inside lg:text-2xl md:text-xl text-lg">
-                  <li><em class="font-bold text-main">Reducing Waste: </em>Recycling helps divert materials from landfills, where they would otherwise take up space and contribute to pollution. By recycling items like plastic bottles, paper, and metal cans, we reduce the amount of waste sent to landfills, helping to preserve valuable land and resources.</li><br>
-                  <li><em class="font-bold text-main">Saving Energy: </em>Producing new products from recycled materials often requires less energy compared to manufacturing from raw materials. For example, recycling aluminum cans saves up to 95% of the energy required to produce aluminum from raw materials. By conserving energy in the recycling process, we reduce greenhouse gas emissions and combat climate change.</li><br>
-                  <li><em class="font-bold text-main">Decreasing Pollution: </em>Recycling reduces the need for extracting, refining, and processing raw materials, which can result in significant environmental pollution. For instance, mining for metals like aluminum and copper can lead to habitat destruction, water pollution, and soil contamination. By recycling these materials, we lessen the environmental impact associated with their extraction and processing.</li>
-               </ul>
+            <!-- hover class  -->
+            <div class="lg:right md:left left">
+              <div class="text-content">
+                <h2 class="font-bold">Project Furniture</h2>
+                <h3>Furniture from recycled plastic</h3>
+                <i></i>
+              </div>
             </div>
-         </section>
+          </div>
 
-         <!-- section Gallery  -->
-         <section id="gallery" class="my-4">
-            <div class="gallery">
-               <h2 class="my-3 content_title prompt-regular lg:text-2xl md:text-2xl text-xl font-bold">Our Gallery</h2>
+          <!-- image seven  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/art-and-jewelry-from-upcycled-waste-Cddm5rGQSI6ToTR9zLK1xA-eTANbwxfTk6pVH4vBTxRZw.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+
+            <!-- hover class  -->
+            <div class="right">
+              <div class="text-content">
+                <h2 class="font-bold">Project Jewelry Art</h2>
+                <h3>Art from jewelery made from recycled glass and recycle</h3>
+                <i></i>
+              </div>
             </div>
+          </div>
 
-            <div class="grid lg:grid-cols-12 md:grid-cols-6 grid-cols-2 lg:grid-rows-6 md:grid-rows-3 grid-rows-1 gap-3">
+          <!-- image eight  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/people-in-the-streets-collecting-trash-Cd_e2celSiCTA48CzDulMA-30B_Io7kT4es5DON5WtpGg.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
 
-               <!-- image one  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/HANDS.jpg" alt="" class="w-full h-full object-cover">
-                  <!-- hover class  -->
-                  <div class="right">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Trees</h2>
-                        <h3>Initiative to Plant More trees to save the planet</h3> 
-                        <i></i>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- image two  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/reciclar-for-waste-recycling-where-we-give-you-5-s-pMvG3mulSzGW8rb0ABbySA-Alk_gnisSoe2yWT0lzo2eQ.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="lg:right md:left left">
-                     <div class="text-content">
-                        <h2 class="font-bold">Reciclar Poster</h2>
-                        <h3>Initiative to Plant More trees to save the planet</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image three  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/a-creative-display-of-toys-crafted-from-upcycled-p-nVrtZSCVSEqIlTxw3NXD5g-f9KLyCwgTE2h5OPnV_1uoA.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="top">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Toys</h2>
-                        <h3>Initiative to Plant More trees to save the planet</h3> 
-
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image four  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/a-heartwarming-poster-depicting-a-group-of-happy-d-Xs3EmeBHQUiyAxz6v5c2Hw-c5k06xxBSEmsSt4Y1fJdlQ.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="top">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Trees</h2>
-                        <h3>Initiative to Plant More trees to save the planet</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image five  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/a-remarkable-before-and-after-transformation-of-a--gXyBKaUvS3GOks0iJFLa9w-M-SWmdMnSuyfYezYh9xEow.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="right">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Change</h2>
-                        <h3>Before and after after a cleanup we did on street zilo</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image six  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/a-striking-photo-of-innovative-furniture-pieces-cr-ZX-AATT8TG6yQiJybGR-RQ-GHi00OMHTP-HRoA-oVBYLA.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="lg:right md:left left">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Furniture</h2>
-                        <h3>Furniture from recycled plastic</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image seven  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/art-and-jewelry-from-upcycled-waste-Cddm5rGQSI6ToTR9zLK1xA-eTANbwxfTk6pVH4vBTxRZw.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="right">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Jewelry Art</h2>
-                        <h3>Art from jewelery made from recycled glass and recycle</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image eight  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/people-in-the-streets-collecting-trash-Cd_e2celSiCTA48CzDulMA-30B_Io7kT4es5DON5WtpGg.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="lg:left md:right left">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Clean</h2>
-                        <h3>Our Group cleaning up strret Zilo</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image nine  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-2 row-span-1 tooltip">
-                  <img src="./img/reciclar-for-waste-recycling-where-we-give-you-5-s-pMvG3mulSzGW8rb0ABbySA-Alk_gnisSoe2yWT0lzo2eQ.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="top">
-                     <div class="text-content">
-                        <h2 class="font-bold">Reciclar Poster</h2>
-                        <h3>Poster Design Reciclar</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image ten  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/a-creative-display-of-toys-crafted-from-upcycled-p-nVrtZSCVSEqIlTxw3NXD5g-f9KLyCwgTE2h5OPnV_1uoA.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="top">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Toys</h2>
-                        <h3>Upcycled Toys from plastic</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image eleven  -->
-               <div class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip">
-                  <img src="./img/a-heartwarming-poster-depicting-a-group-of-happy-d-Xs3EmeBHQUiyAxz6v5c2Hw-c5k06xxBSEmsSt4Y1fJdlQ.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="lg:right md:top right">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Toys</h2>
-                        <h3>Upcycled plastic toys for children in Upendo Orphanage</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
-
-               <!-- image twelve  -->
-               <div class="lg:col-span-3 md:col-span-6 col-span-1 lg:row-span-2 md:row-span-3 row-span-1 tooltip">
-                  <img src="./img/a-remarkable-before-and-after-transformation-of-a--gXyBKaUvS3GOks0iJFLa9w-M-SWmdMnSuyfYezYh9xEow.jpeg" alt="" class="w-full h-full object-cover">
-
-                  <!-- hover class  -->
-                  <div class="top">
-                     <div class="text-content">
-                        <h2 class="font-bold">Project Change</h2>
-                        <h3>Before and after after a cleanup we did on street zilo</h3> 
-                        <i></i>
-                     </div>
-                     
-                  </div>
-               </div>
+            <!-- hover class  -->
+            <div class="lg:left md:right left">
+              <div class="text-content">
+                <h2 class="font-bold">Project Clean</h2>
+                <h3>Our Group cleaning up strret Zilo</h3>
+                <i></i>
+              </div>
             </div>
-         </section>
-      </main>
+          </div>
 
-      <!-- lottie file  -->
-      <script
-         src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-         type="module"
-      ></script>
-      <script
-         src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-         type="module"
-      ></script>
+          <!-- image nine  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-2 row-span-1 tooltip"
+          >
+            <img
+              src="./img/reciclar-for-waste-recycling-where-we-give-you-5-s-pMvG3mulSzGW8rb0ABbySA-Alk_gnisSoe2yWT0lzo2eQ.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
 
-      <!-- ionic icons -->
-      <script
-         type="module"
-         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-         nomodule
-         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
+            <!-- hover class  -->
+            <div class="top">
+              <div class="text-content">
+                <h2 class="font-bold">Reciclar Poster</h2>
+                <h3>Poster Design Reciclar</h3>
+                <i></i>
+              </div>
+            </div>
+          </div>
 
-      <!-- swiper  -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <!-- image ten  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/a-creative-display-of-toys-crafted-from-upcycled-p-nVrtZSCVSEqIlTxw3NXD5g-f9KLyCwgTE2h5OPnV_1uoA.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
 
-      <!-- animate on scroll  -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <!-- hover class  -->
+            <div class="top">
+              <div class="text-content">
+                <h2 class="font-bold">Project Toys</h2>
+                <h3>Upcycled Toys from plastic</h3>
+                <i></i>
+              </div>
+            </div>
+          </div>
 
-      <!-- javascript  -->
-      <script src="script.js"></script>
-   </body>
+          <!-- image eleven  -->
+          <div
+            class="lg:col-span-3 md:col-span-2 col-span-1 lg:row-span-2 md:row-span-1 row-span-1 tooltip"
+          >
+            <img
+              src="./img/a-heartwarming-poster-depicting-a-group-of-happy-d-Xs3EmeBHQUiyAxz6v5c2Hw-c5k06xxBSEmsSt4Y1fJdlQ.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+
+            <!-- hover class  -->
+            <div class="lg:right md:top right">
+              <div class="text-content">
+                <h2 class="font-bold">Project Toys</h2>
+                <h3>Upcycled plastic toys for children in Upendo Orphanage</h3>
+                <i></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- image twelve  -->
+          <div
+            class="lg:col-span-3 md:col-span-6 col-span-1 lg:row-span-2 md:row-span-3 row-span-1 tooltip"
+          >
+            <img
+              src="./img/a-remarkable-before-and-after-transformation-of-a--gXyBKaUvS3GOks0iJFLa9w-M-SWmdMnSuyfYezYh9xEow.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+
+            <!-- hover class  -->
+            <div class="top">
+              <div class="text-content">
+                <h2 class="font-bold">Project Change</h2>
+                <h3>Before and after after a cleanup we did on street zilo</h3>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- lottie file  -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <!-- ionic icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- javascript  -->
+    <script src="script.js"></script>
+  </body>
 </html>

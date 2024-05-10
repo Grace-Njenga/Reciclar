@@ -122,11 +122,14 @@ li a:hover {
 }
 
 /* use section  */
-.use {
-   width: 70%;
-   margin: 0 auto;
+.header-use{
+   margin-top: 2em;
 }
-.use .content_title::after{
+/* .use {
+   width: 0%;
+   margin: 0 auto;
+} */
+.header-use .content_title::after{
    background-color: #9bd673;
 }
 
@@ -136,6 +139,8 @@ li a:hover {
    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
    backdrop-filter: blur(6.2px);
    -webkit-backdrop-filter: blur(6.2px);
+   /* max-height: 500px; */
+  overflow: hidden;
 }
 .content_title{
    position: relative;
@@ -149,6 +154,13 @@ li a:hover {
    left: 0;
    bottom: -5px;
 }
+.expanded {
+   max-height: none;
+ }
+ 
+ .expand-button {
+   display: none;
+ }
 
 /* section why recycle  */
 .recycle{
