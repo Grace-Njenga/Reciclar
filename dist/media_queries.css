@@ -1,41 +1,48 @@
-@media (max-width: 500px) and (min-width: 200px){
-    .nav{
-        position: fixed !important;
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        background: rgba(40, 122, 40, 0.29);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.2px);
-        -webkit-backdrop-filter: blur(6.2px);
-        padding: min(30vh, 10rem) 2em;
-        z-index: 1000;
-        transform: translateX(100%);
-        transition: transform 350ms ease-in-out;
-    }
-    .nav[data-visible="true"] {
-        transform: translateX(0%);
-    }
-    .menu{
-        position: fixed;
-        display: block;
-        position: absolute;
-        width: 2rem;
-        aspect-ratio: 1;
-        border-radius: 9px;
-        right: 0;
-        bottom: -.4%;
-        z-index: 9999;
-        /* position: fixed; */
-        font-weight: bolder;
-        font-size: 49px;
-        color: black;
-    }
-    .swiper-slide{
-        padding-right: 0px;
-    }
-    .use,
-    .recycle{
-        width: 90%;
-        margin: 0 auto;
-     }
+@media (max-width: 500px) and (min-width: 200px) {
+  .nav {
+    position: fixed !important;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    background: rgba(40, 122, 40, 0.29);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    padding: min(30vh, 10rem) 2em;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in-out;
+  }
+  .nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
+  .menu {
+    position: fixed;
+    display: block;
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 9px;
+    right: 0;
+    bottom: -0.4%;
+    z-index: 9999;
+    /* position: fixed; */
+    font-weight: bolder;
+    font-size: 49px;
+    color: black;
+  }
+  .swiper-slide {
+    padding-right: 0px;
+  }
+  .use,
+  .recycle {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .ellips {
+    --max-lines: 4;
+    display: -webkit-box;
+    -webkit-line-clamp: (--max-lines);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }

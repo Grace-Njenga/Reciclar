@@ -29,10 +29,10 @@ const swiper = new Swiper(".swiper", {
 });
 
 // read more 
-function toggleExpand() {
-   var textSection = document.querySelector('.text-section');
-   textSection.classList.toggle('expanded');
- }
+// function toggleExpand() {
+//    var textSection = document.querySelector('.text-section');
+//    textSection.classList.toggle('expanded');
+//  }
  
 
 //tool-tip hover effect
