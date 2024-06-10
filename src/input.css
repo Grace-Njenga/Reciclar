@@ -66,6 +66,26 @@ li a:hover {
   color: #003500;
 }
 
+/* scrolbar  */
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -92,23 +112,5 @@ li a:hover {
   font-style: normal;
 }
 
-/* scrolbar  */
-/* Width and height of the scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 5px;
-}
-/* Track (the background of the scrollbar) */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-/* Handle (the draggable part of the scrollbar) */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+
 
