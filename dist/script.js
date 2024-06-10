@@ -13,44 +13,6 @@ navToogle.addEventListener("click", () => {
    }
 });
 
-// swiper js
-const isLargeScreen = window.innerWidth > 768;
-const swiper = new Swiper(".swiper", {
-   // Optional parameters
-   direction: isLargeScreen ? "vertical" : "horizontal",
-   mousewheel: isLargeScreen,
-   loop: true,
-
-   // If we need pagination
-   pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-   },
-});
-
-// read more 
-// function toggleExpand() {
-//    var textSection = document.querySelector('.text-section');
-//    textSection.classList.toggle('expanded');
-//  }
- 
-
-//tool-tip hover effect
-function showTooltip(event) {
-   const tooltipContainer = document.querySelector(".tooltip-container");
-   const tooltipContent = tooltipContainer.querySelector(".tooltip-content");
-   tooltipContent.style.display = "block";
-   tooltipContent.style.left = event.clientX + 10 + "px"; // Adjust positioning as needed
-   tooltipContent.style.top = event.clientY + 10 + "px"; // Adjust positioning as needed
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-   const tooltipContainer = document.querySelector(".tooltip-container");
-   const tooltipContent = tooltipContainer.querySelector(".tooltip-content");
-   tooltipContainer.addEventListener("mouseleave", function () {
-      tooltipContent.style.display = "none";
-   });
-});
 
 // initialize aos
 AOS.init();

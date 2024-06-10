@@ -30,19 +30,5 @@
     font-size: 49px;
     color: black;
   }
-  .swiper-slide {
-    padding-right: 0px;
-  }
-  .use,
-  .recycle {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .ellips {
-    --max-lines: 4;
-    display: -webkit-box;
-    -webkit-line-clamp: (--max-lines);
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+ 
 }
