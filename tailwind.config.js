@@ -11,12 +11,12 @@ module.exports = {
 
     colors: {
       // DARK-GREEN ---- Primary color
-      // Can be used as a primary color, background color for sections, or in elements like buttons, headers, and footers. 
+      // Can be used as a primary color, background color for sections, or in elements like buttons, headers, and footers.
       dark_green__primary: "#638A55",
 
       // light-green ---- Accent color
       // Can be used as an accent color, secondary background color, or for highlights and call-to-action buttons.
-      light_green__secondary: "light-green",
+      light_green__secondary: "#9BBA74",
 
       // Soft Yellow-Green---- highlighting CTAs
       //  Can be used for highlighting important information, backgrounds, or in graphical elements and icons.

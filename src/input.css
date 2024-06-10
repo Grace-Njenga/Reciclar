@@ -112,5 +112,21 @@ li a:hover {
   font-style: normal;
 }
 
+/* header section  */
+.menu{
+  display: none;
+}
 
+/* svg background waves  */
+.waves{
+  aspect-ratio: 960/540;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+.layer1{
+  background-image: url("/dist/img/layered-waves-haikei.svg");
+}

@@ -24,23 +24,84 @@
 
     <title>Reciclar</title>
   </head>
-  <body class="yrsa-regular">
-
+  <body class="yrsa-regular ">
+    <!-- header section  -->
     <section class="">
-      <header class="">
-        <nav class=""></nav>
+      <header class="m-4 relative flex justify-between self-center">
+        <!-- logo  -->
+        <div class="flex self-center">
+          <h1
+            class="libre-baskerville-regular text-main font-extrabold tracking-wider"
+          >
+            RECICLAR
+          </h1>
+        </div>
+        <!-- menu icon  -->
+        <ion-icon
+          name="menu-sharp"
+          class="menu text-3xl text-accent"
+          aria-controls="icon-menu"
+          aria-expanded="false"
+          size="large"
+        ></ion-icon>
+        <!-- navigation bar  -->
+        <nav class="flex">
+          <ul id="icon-menu" data-visible="false" class="nav flex py-2 gap-6">
+            <li class="mr-4 lg:ml-4 md:ml-4 ml-0">
+              <a href="#home" class="">Home</a>
+            </li>
+            <!-- about_us -->
+            <li class="mr-4">
+              <a href="#about" class="">About Us</a>
+            </li>
+            <!-- gallery -->
+            <li class="mr-4">
+              <a href="#gallery" class="">Gallery</a>
+            </li>
+            <!-- contact_us  -->
+            <li class="mr-4">
+              <a href="#contact" class="">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
       </header>
     </section>
 
     <!-- hero section  -->
-   <main class="">
-    <section class="grid">
-      <!-- image  -->
-      <div class="">
-        <img src="./img/hero.png" alt="Reuse, Reduce, Recycle" srcset="">
-      </div>
-    </section>
-   </main>
+    <main class="w-full h-full relative ">
+      <section
+        class="grid place-content-center px-[2vw] lg:grid-cols-2 md:grid-cols-1 grid-cols-1 waves layer1 max-h-dvh"
+      >
+        <!-- content  -->
+        <div class="">
+          <h1 class="text-dark_green__primary tracking-wide font-bold text-4xl">
+            RECICLAR PLASTICO
+          </h1>
+          <em class="font-bold italic text-medium_brown__complementary">
+            Plastic Riches, Empowering Sustainable Futures</em
+          >
+
+          <p class="">
+            We are dedicated to promoting and encouraging plastic recycling.
+            Learn about the importance of recycling plastics, explore innovative
+            initiatives,and join us in creating a sustainable future by
+            embracing a culture of plastic recycling.
+          </p>
+
+          <a
+            href="#learn_more"
+            class="bg-pale_yellow__background hover:text-white"
+          >
+            Learn More!
+          </a>
+        </div>
+
+        <!-- image  -->
+        <div class="lg:order-3 md:order-1 -order-1">
+          <img src="./img/hero.png" alt="Reuse, Reduce, Recycle" srcset="" />
+        </div>
+      </section>
+    </main>
 
     <!-- ionic icons -->
     <script

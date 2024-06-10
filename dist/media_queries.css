@@ -30,5 +30,10 @@
     font-size: 49px;
     color: black;
   }
- 
+}
+
+@media (min-width: 2100px) {
+  .waves {
+    background-size: 100% calc(2vw + 90px);
+  }
 }

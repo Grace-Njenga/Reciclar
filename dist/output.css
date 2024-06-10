@@ -648,6 +648,121 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative{
+  position: relative;
+}
+
+.-order-1{
+  order: -1;
+}
+
+.m-4{
+  margin: 1rem;
+}
+
+.ml-0{
+  margin-left: 0px;
+}
+
+.mr-4{
+  margin-right: 1rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.max-h-dvh{
+  max-height: 100dvh;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.place-content-center{
+  place-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.self-center{
+  align-self: center;
+}
+
+.bg-pale_yellow__background{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 178 / var(--tw-bg-opacity));
+}
+
+.px-\[2vw\]{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-extrabold{
+  font-weight: 800;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider{
+  letter-spacing: 0.05em;
+}
+
+.text-dark_green__primary{
+  --tw-text-opacity: 1;
+  color: rgb(99 138 85 / var(--tw-text-opacity));
+}
+
+.text-medium_brown__complementary{
+  --tw-text-opacity: 1;
+  color: rgb(196 141 96 / var(--tw-text-opacity));
+}
+
 .libre-baskerville-regular {
   font-family: "Libre Baskerville", serif;
   font-weight: 600;
@@ -673,5 +788,51 @@ video {
   font-style: normal;
 }
 
+/* header section  */
 
+.menu{
+  display: none;
+}
 
+/* svg background waves  */
+
+.waves{
+  aspect-ratio: 960/540;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1{
+  background-image: url("/dist/img/layered-waves-haikei.svg");
+}
+
+@media (min-width: 768px){
+  .md\:order-1{
+    order: 1;
+  }
+
+  .md\:ml-4{
+    margin-left: 1rem;
+  }
+
+  .md\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 976px){
+  .lg\:order-3{
+    order: 3;
+  }
+
+  .lg\:ml-4{
+    margin-left: 1rem;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
