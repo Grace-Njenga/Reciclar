@@ -24,7 +24,7 @@
 
     <title>Reciclar</title>
   </head>
-  <body class="yrsa-regular ">
+  <body class="yrsa-regular">
     <!-- header section  -->
     <section class="">
       <header class="m-4 relative flex justify-between self-center">
@@ -36,6 +36,9 @@
             RECICLAR
           </h1>
         </div>
+        <!-- <div class="flex ">
+          <ion-icon name="leaf-outline" size="large" class="text-dark_green__primary"></ion-icon>
+        </div> -->
         <!-- menu icon  -->
         <ion-icon
           name="menu-sharp"
@@ -47,20 +50,28 @@
         <!-- navigation bar  -->
         <nav class="flex">
           <ul id="icon-menu" data-visible="false" class="nav flex py-2 gap-6">
-            <li class="mr-4 lg:ml-4 md:ml-4 ml-0">
+            <li class="md:mr-4 lg:mr-6 lg:ml-4 md:ml-4 ml-0">
               <a href="#home" class="">Home</a>
             </li>
             <!-- about_us -->
-            <li class="mr-4">
+            <li class="md:mr-4 lg:mr-6">
               <a href="#about" class="">About Us</a>
             </li>
             <!-- gallery -->
-            <li class="mr-4">
+            <li class="md:mr-4 lg:mr-6">
               <a href="#gallery" class="">Gallery</a>
             </li>
             <!-- contact_us  -->
-            <li class="mr-4">
+            <li class="md:mr-4 lg:mr-6">
               <a href="#contact" class="">Contact Us</a>
+            </li>
+            <!-- Cta  -->
+            <li class="md:mr-4 lg:mr-6">
+              <a
+                href="#Scan.py"
+                class="bg-pale_yellow__background text-medium_brown__complementary rounded-lg px-[8px] py-[14px]"
+                >Scan Now!</a
+              >
             </li>
           </ul>
         </nav>
@@ -68,12 +79,21 @@
     </section>
 
     <!-- hero section  -->
-    <main class="w-full h-full relative ">
+    <main class="w-full h-full relative">
       <section
-        class="grid place-content-center px-[2vw] lg:grid-cols-2 md:grid-cols-1 grid-cols-1 waves layer1 max-h-dvh"
+        class="grid place-content-center px-[2vw] lg:grid-cols-2 md:grid-cols-1 grid-cols-1 max-h-dvh"
       >
-        <!-- content  -->
+        <!-- image hero -->
         <div class="">
+          <img
+            src="./img/8bit-young-man-bringing-a-bottle-for-recycling.gif"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <!-- content  -->
+        <div class="grid place-content-center lg:max-w-[80] lg:px-[2em] gap-3">
           <h1 class="text-dark_green__primary tracking-wide font-bold text-4xl">
             RECICLAR PLASTICO
           </h1>
@@ -81,24 +101,21 @@
             Plastic Riches, Empowering Sustainable Futures</em
           >
 
-          <p class="">
+          <p class="mb-[1em]">
             We are dedicated to promoting and encouraging plastic recycling.
             Learn about the importance of recycling plastics, explore innovative
             initiatives,and join us in creating a sustainable future by
             embracing a culture of plastic recycling.
           </p>
 
-          <a
-            href="#learn_more"
-            class="bg-pale_yellow__background hover:text-white"
-          >
-            Learn More!
-          </a>
-        </div>
-
-        <!-- image  -->
-        <div class="lg:order-3 md:order-1 -order-1">
-          <img src="./img/hero.png" alt="Reuse, Reduce, Recycle" srcset="" />
+          <div class="">
+            <a
+              href="#learn_more"
+              class="bg-pale_yellow__background text-medium_brown__complementary font-semibold hover:text-light_green__secondary rounded-lg px-[8px] py-[14px]"
+            >
+              Learn More!
+            </a>
+          </div>
         </div>
       </section>
     </main>

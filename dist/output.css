@@ -24,6 +24,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 input,
@@ -652,12 +653,13 @@ video {
   position: relative;
 }
 
-.-order-1{
-  order: -1;
-}
-
 .m-4{
   margin: 1rem;
+}
+
+.mx-\[20vw\]{
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .ml-0{
@@ -666,6 +668,14 @@ video {
 
 .mr-4{
   margin-right: 1rem;
+}
+
+.mb-\[1em\]{
+  margin-bottom: 1em;
+}
+
+.mt-\[1em\]{
+  margin-top: 1em;
 }
 
 .flex{
@@ -692,6 +702,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .place-content-center{
   place-content: center;
 }
@@ -704,13 +718,35 @@ video {
   gap: 1.5rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .self-center{
   align-self: center;
+}
+
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .bg-pale_yellow__background{
   --tw-bg-opacity: 1;
   background-color: rgb(252 231 178 / var(--tw-bg-opacity));
+}
+
+.bg-medium_brown__complementary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(196 141 96 / var(--tw-bg-opacity));
+}
+
+.px-\[1\.5em\]{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .px-\[2vw\]{
@@ -721,6 +757,46 @@ video {
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-\[1em\]{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.px-\[\]{
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[8px\]{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[32px\]{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.py-\[16px\]{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-\[14px\]{
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.px-\[2em\]{
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .text-3xl{
@@ -739,6 +815,10 @@ video {
 
 .font-extrabold{
   font-weight: 800;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .italic{
@@ -794,28 +874,18 @@ video {
   display: none;
 }
 
-/* svg background waves  */
-
-.waves{
-  aspect-ratio: 960/540;
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.layer1{
-  background-image: url("/dist/img/layered-waves-haikei.svg");
+.hover\:text-light_green__secondary:hover{
+  --tw-text-opacity: 1;
+  color: rgb(155 186 116 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
-  .md\:order-1{
-    order: 1;
-  }
-
   .md\:ml-4{
     margin-left: 1rem;
+  }
+
+  .md\:mr-4{
+    margin-right: 1rem;
   }
 
   .md\:grid-cols-1{
@@ -824,15 +894,33 @@ video {
 }
 
 @media (min-width: 976px){
-  .lg\:order-3{
-    order: 3;
-  }
-
   .lg\:ml-4{
     margin-left: 1rem;
+  }
+
+  .lg\:mr-6{
+    margin-right: 1.5rem;
+  }
+
+  .lg\:max-w-72{
+    max-width: 18rem;
+  }
+
+  .lg\:max-w-\[\]{
+    max-width: ;
+  }
+
+  .lg\:max-w-\[80\]{
+    max-width: 80;
   }
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .lg\:px-\[2em\]{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
+

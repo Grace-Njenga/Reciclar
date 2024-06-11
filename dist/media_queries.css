@@ -1,3 +1,25 @@
+/* large screens */
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+  /* header{
+    width: 80%;
+    margin: 0 auto;
+    background-color: aqua;
+  } */
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
+}
+
 @media (max-width: 500px) and (min-width: 200px) {
   .nav {
     position: fixed !important;
@@ -32,8 +54,3 @@
   }
 }
 
-@media (min-width: 2100px) {
-  .waves {
-    background-size: 100% calc(2vw + 90px);
-  }
-}

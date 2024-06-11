@@ -38,6 +38,7 @@ module.exports = {
       height: {
         500: "min",
       },
+      
     },
   },
   plugins: [],
