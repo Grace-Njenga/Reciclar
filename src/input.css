@@ -47,6 +47,7 @@ h6 {
   box-sizing: border-box;
   max-width: 100%;
   font-family: "Yrsa", serif;
+  height: auto;
 }
 html {
   scroll-behavior: smooth;
