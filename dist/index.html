@@ -83,9 +83,9 @@
     </section>
 
     <!-- hero section  -->
-    <main class="w-full h-full relative">
+    <main class="w-full h-dvh relative">
       <section
-        class="grid place-content-center px-[2vw] lg:grid-cols-2 md:grid-cols-1 grid-cols-1 max-h-dvh"
+        class="grid place-content-center lg:grid-cols-2 md:grid-cols-1 grid-cols-1 h-dvh"
       >
         <!-- image hero -->
         <div class="h-full w-full">
@@ -99,7 +99,7 @@
 
         <!-- content  -->
         <div
-          class="hero_content grid place-content-center lg:max-w-[80] lg:px-[2em] gap-3"
+          class="hero_content grid place-content-center text-justify px-[16px]"
         >
           <h1 class="text-dark_green__primary tracking-wide font-bold text-4xl">
             RECICLAR PLASTICO
@@ -128,13 +128,53 @@
         </div>
       </section>
 
+      <!-- section benefits  -->
+      <section class="h-dvh w-full">
+        <div class="grid place-content-center lg:grid-cols-3 md:grid-cols-3 grid-cols-3 gap-3 w-[70] mx-auto my-0 bg-dark_green__primary">
+          <!-- benefit 1 -->
+          <div class="text-justify bg-light_brown__background">
+            <ion-icon
+              name="cash-outline"
+              class="text-dark_green__primary"
+            ></ion-icon>
+
+            <!-- content  -->
+            <p class="italic text-sm">
+              Get 5 KES for every plastic bottle recycled at our stations, incentivizing you to help clean up our environment.
+            </p>
+          </div>
+
+          <!-- benefit 2  -->
+          <div class="text-justify">
+            <ion-icon name="planet-outline" class="text-light_yellow__highlight"></ion-icon>
+
+            <!-- content  -->
+            <p class="italic text-sm">
+              We turn collected plastics into toys, art, and durable furniture using Wood Plastic Composite (WPC), reducing waste and promoting sustainability.
+            </p>
+          </div>
+
+          <!-- benefit 3  -->
+          <div class="text-justify">
+            <ion-icon name="school-outline" class="text-dark_green__primary"></ion-icon>
+
+            <!-- content  -->
+            <p class="italic text-sm">
+              We employ local youth, fund scientific research, and offer educational programs and scholarships, fostering a culture of environmental responsibility and providing opportunities for growth.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- section about us  -->
-      <section class="h-full w-full p-[2em]">
+      <section class="h-dvh w-full">
         <div
-          class="px-[2em] grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:grid-rows-4 md:grid-rows-4 gap-[1rem]"
+          class="px-[2em] grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:grid-rows-3 md:grid-rows-3 grid-rows-4 gap-[1rem]"
         >
           <!-- grid one items one, two rows span  -->
-          <div class="col-span-1 row-span-1">
+          <div
+            class="lg:col-span-1 lg:row-span-1 md:col-span-1 md:row-span-1 col-span-1"
+          >
             <h2
               class="font-bold tracking-widest lg:text-4xl text-dark_green__primary my-[1rem]"
             >
@@ -152,7 +192,9 @@
           </div>
 
           <!-- grid 2 -->
-          <div class="col-span-1 row-span-2 h-full w-full">
+          <div
+            class="lg:col-span-1 lg:row-span-2 md:col-span-1 md:row-span-2 row-span-1 h-full w-full"
+          >
             <img
               src="./img/undraw_-removebg-preview.png"
               alt=""
@@ -161,9 +203,11 @@
           </div>
 
           <!-- grid 3  -->
-          <div class="col-span-1 row-span-2 h-full w-full">
+          <div
+            class="lg:col-span-1 lg:row-span-2 md:col-span-1 md:row-span-2 row-span-1 h-full w-full"
+          >
             <img
-              src="./img/undraw_Creative_woman_re_u5tk-removebg-preview.png"
+              src="./img/undraw_career_progress_ivdb-removebg.png"
               alt=""
               class="w-full h-full"
             />
@@ -187,33 +231,15 @@
               and more sustainable planet.
             </p>
           </div>
-
-          <!-- grid 5  -->
-          <div class="col-span-2 row-span-1">
-            <h2
-              class="font-bold tracking-widest lg:text-4xl text-dark_green__primary"
-            >
-              WHAT WE DO
-            </h2>
-
-            <p class="lg:text-xl">
-              Once we acquire the plastics, we shred and recycle them into
-              various products. Some of our art pieces have been displayed in
-              the Nairobi Museum and in our office. We also upcycle plastics
-              into toys for Upendo Children's Home and other items. We involve
-              the children in creating upcycled materials such as shoes,
-              couches, and furniture (using durable wood plastic composite
-              (WPC)). Additionally, we clean cities affected by plastic waste,
-              transforming them into much cleaner places. These are just a few
-              of the things we do. The proceeds from these projects help us
-              either upscale our manufacturing processes or fund scientists to
-              find better ways to manage plastic in the environment.
-              Importantly, all our processes are environmentally friendly.
-            </p>
-          </div>
         </div>
       </section>
     </main>
+
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- ionic icons -->
     <script
@@ -224,12 +250,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
-    <!-- swiper  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- animate on scroll  -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- javascript  -->
     <script src="script.js"></script>

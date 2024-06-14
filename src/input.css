@@ -6,12 +6,18 @@
 *::after {
   box-sizing: border-box;
 }
-* {
+*, body, html {
   margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: "Yrsa", serif;
+  height: auto;
 }
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
 img,
 picture,
@@ -42,19 +48,8 @@ h6 {
   isolation: isolate;
 }
 
-* {
-  /*background-color: rgb(40, 121, 40);*/
-  box-sizing: border-box;
-  max-width: 100%;
-  font-family: "Yrsa", serif;
-  height: auto;
-}
 html {
   scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-  padding: 0;
 }
 
 :root {
@@ -119,6 +114,17 @@ li a:hover {
   font-weight: 350;
   font-style: normal;
 }
+
+/* scroll snap  */
+/* main{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100dvh;
+}
+section{
+  height: 100dvh;
+  scroll-snap-align: start;
+} */
 
 /* header section  */
 .menu {
