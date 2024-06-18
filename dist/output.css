@@ -671,48 +671,12 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-\[2rem\]{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.my-\[3rem\]{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.my-\[4rem\]{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.my-\[rem\]{
-  margin-top: rem;
-  margin-bottom: rem;
-}
-
 .mb-\[1em\]{
   margin-bottom: 1em;
 }
 
 .ml-0{
   margin-left: 0px;
-}
-
-.mb-\[\]{
-  margin-bottom: ;
-}
-
-.mb-\[2rem\]{
-  margin-bottom: 2rem;
-}
-
-.mb-\[8rem\]{
-  margin-bottom: 8rem;
-}
-
-.mb-\[rem\]{
-  margin-bottom: rem;
 }
 
 .flex{
@@ -837,11 +801,6 @@ video {
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-sm{
