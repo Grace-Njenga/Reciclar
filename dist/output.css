@@ -699,6 +699,22 @@ video {
   margin-left: 0px;
 }
 
+.mb-\[\]{
+  margin-bottom: ;
+}
+
+.mb-\[2rem\]{
+  margin-bottom: 2rem;
+}
+
+.mb-\[8rem\]{
+  margin-bottom: 8rem;
+}
+
+.mb-\[rem\]{
+  margin-bottom: rem;
+}
+
 .flex{
   display: flex;
 }
@@ -794,6 +810,10 @@ video {
 .py-\[14px\]{
   padding-top: 14px;
   padding-bottom: 14px;
+}
+
+.pb-\[2rem\]{
+  padding-bottom: 2rem;
 }
 
 .text-center{
