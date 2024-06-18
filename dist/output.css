@@ -686,6 +686,11 @@ video {
   margin-bottom: 4rem;
 }
 
+.my-\[rem\]{
+  margin-top: rem;
+  margin-bottom: rem;
+}
+
 .mb-\[1em\]{
   margin-bottom: 1em;
 }
