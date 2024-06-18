@@ -3,12 +3,12 @@
 /* CSS reset  */
 *,
 *::before,
-*::after {
+*::after,
+body,
+html {
   box-sizing: border-box;
-}
-*, body, html {
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
   max-width: 100%;
   font-family: "Yrsa", serif;
   height: auto;
@@ -16,8 +16,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  margin: 0;
-  padding: 0;
+  margin: 0 5vw;
 }
 img,
 picture,
@@ -115,18 +114,25 @@ li a:hover {
   font-style: normal;
 }
 
-/* scroll snap  */
-/* main{
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100dvh;
-}
-section{
-  height: 100dvh;
-  scroll-snap-align: start;
-} */
-
 /* header section  */
 .menu {
   display: none;
+}
+
+.benefits{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60%;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+.card{
+  grid-column: span 1;
+  padding: 1.8em;
+  border-radius: 2rem;
+}
+
+.cent{
+  width: 40%;
+  margin: 0 auto;
 }

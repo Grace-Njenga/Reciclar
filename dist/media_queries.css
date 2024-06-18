@@ -14,9 +14,9 @@
     font-size: --base-font-size * 1.2;
     line-height: var(--base-line-height)*1.2;
   }
-  body{
+  /* body{
     margin: 0 15rem;
-  }
+  } */
   .container {
     width: 1370px;
   }
@@ -79,4 +79,14 @@
     font-size: 49px;
     color: black;
   }
+
+  .cent,
+  .benefits{
+    width: 90%;
+  }
+  .card{
+    padding: .5rem;
+    border-radius: 1rem;
+  }
+
 }
