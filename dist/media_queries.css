@@ -80,17 +80,6 @@
     color: black;
   }
 
-  .cent,
-  .benefits{
-    width: 90%;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .card{
-    padding: .5rem;
-    border-radius: 1rem;
-  }
-  .card:last-child{
-    grid-column: span 2;
-  }
+
 
 }

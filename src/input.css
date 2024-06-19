@@ -1,23 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Prompt:wght@300;400&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap");
-
-/* CSS reset  */
+/* CSS RESET  */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
 *,
 *::before,
-*::after,
-body,
-html {
+*::after {
   box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
   margin: 0;
   padding: 0;
-  max-width: 100%;
-  font-family: "Yrsa", serif;
-  height: auto;
 }
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  margin: 0 5vw;
 }
+/*
+  5. Improve media defaults
+*/
 img,
 picture,
 video,
@@ -25,14 +33,19 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
-  height: auto;
 }
+/*
+  6. Remove built-in form typography styles
+*/
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
+/*
+  7. Avoid text overflows
+*/
 p,
 h1,
 h2,
@@ -42,97 +55,59 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+/*
+  8. Create a root stacking context
+*/
 #root,
 #__next {
   isolation: isolate;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-:root {
-  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-  /* // Font-Size */
-  --base-font-size: 1em;
-
-  /* // Line-Height */
-  --base-line-height: 1.5;
-  --header-line-height: 1.25;
-}
-
-li a {
-  font-size: var(--font-size-base);
-}
-li a:hover {
-  color: #003500;
-}
-
-/* scrolbar  */
-/* Width and height of the scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 5px;
-}
-/* Track (the background of the scrollbar) */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-/* Handle (the draggable part of the scrollbar) */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-.prompt-light {
-  font-family: "Prompt", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.prompt-regular {
-  font-family: "Prompt", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-.yrsa-regular {
-  font-family: "Yrsa", serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
+@layer base {
+  @font-face {
+    font-family: "Cabin Sketch", sans-serif;
+    font-family: "Gorditas", serif;
+    font-family: "Trykker", serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Gorditas&family=Trykker&display=swap);
+  }
+  html {
+    font-family: "Trykker", serif;
+  }
+  body{
+    width: 96%;
+    margin: 0 auto;
+  }
+  h1 {
+    @apply text-3xl;
+    @apply text-dark_green__primary;
+    @apply font-Cabin;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-Gorditas;
+    @apply font-medium;
+    @apply text-light_green__secondary;
+  }
+  p,
+  a {
+    @apply text-base;
+    @apply font-Trykker;
+    @apply font-normal;
+  }
+
+  /* centered  */
+  .centered{
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
-/* header section  */
-.menu {
+.menu{
   display: none;
-}
-
-.benefits{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 60%;
-  margin: 0 auto;
-  gap: 1.5rem;
-}
-.card{
-  grid-column: span 1;
-  padding: 1.8em;
-  border-radius: 2rem;
-}
-
-.cent{
-  width: 40%;
-  margin: 0 auto;
 }

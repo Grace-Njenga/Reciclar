@@ -35,10 +35,11 @@ module.exports = {
       medium_brown__complementary: "#C48D60",
     },
     extend: {
-      height: {
-        500: "min",
+      fontFamily: {
+        Cabin: [' "Cabin Sketch", sans-serif'],
+        Gorditas: [' "Gorditas", serif'],
+        Trykker: [' "Trykker", serif'],
       },
-      
     },
   },
   plugins: [],
