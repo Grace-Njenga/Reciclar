@@ -802,6 +802,22 @@ p,
   background-color: rgb(252 231 178 / var(--tw-bg-opacity));
 }
 
+.p-\[1em\] {
+  padding: 1em;
+}
+
+.p-\[\.7em\] {
+  padding: .7em;
+}
+
+.p-\[\.3rem\] {
+  padding: .3rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
