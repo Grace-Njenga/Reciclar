@@ -74,10 +74,10 @@
 
     <!-- section hero  -->
     <section
-      class="grid place-content-center lg:grid-cols-2 md:grid-cols-1 grid-cols-1 h-dvh"
+      class="pt-[.5em] grid place-content-center lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:grid-rows-1 md:grid-rows-1 grid-rows-2 h-dvh"
     >
       <!-- image hero -->
-      <div class="h-full w-full lg:order-1 md:order-1 order-3">
+      <div class="h-full w-full row-span-1 centered">
         <img
           src="./img/man-bringing-a-bottle-for-recycling.gif"
           alt=""
@@ -87,19 +87,17 @@
       </div>
 
       <!-- content  -->
-      <div
-        class="hero_content grid place-content-center text-justify px-[16px]"
-      >
-        <h1 class="text-dark_green__primary tracking-wide font-bold text-4xl">
+      <div class="grid place-content-center text-justify row-span-1 h-50">
+        <h1
+          class="text-dark_green__primary tracking-wide font-bold md:font-4xl lg:text-4xl text-base"
+        >
           RECICLAR PLASTICO
         </h1>
-        <em
-          class="font-bold italic text-medium_brown__complementary text-base md:text-lg lg:text-xl"
-        >
+        <em class="font-bold italic text-medium_brown__complementary">
           Plastic Riches, Empowering Sustainable Futures</em
         >
 
-        <p class="mb-[1em] text-base md:text-lg lg:text-xl">
+        <p class="mb-[1em] text-sm md:text-lg lg:text-xl">
           We are dedicated to promoting and encouraging plastic recycling. Learn
           about the importance of recycling plastics, explore innovative
           initiatives,and join us in creating a sustainable future by embracing
@@ -118,64 +116,100 @@
     </section>
 
     <!-- section benefits  centered grid grid-cols-3 -->
-     <section class="centered">
+    <section class="centered">
       <!-- title and a small intro  -->
-       <div class="text-center mb-[1em]">
-          <h2 class="text-dark_green__primary text-4xl font-extrabold libre-baskerville-regular ">Why <span class="text-light_yellow__highlight text-4xl font-extrabold ">RECICLAR</span> with Us?</h2>
-          <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ratione vel sit ut corrupti, cupiditate quod alias accusamus tempore, atque asperiores voluptate ipsam voluptatum dolore iste qui voluptas deserunt!</p>
-        </div>
+      <div class="text-center mb-[1em]">
+        <h2
+          class="text-dark_green__primary text-4xl font-extrabold libre-baskerville-regular"
+        >
+          Why
+          <span class="text-light_yellow__highlight text-4xl font-extrabold"
+            >RECICLAR</span
+          >
+          with Us?
+        </h2>
+        <p class="">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+          ratione vel sit ut corrupti, cupiditate quod alias accusamus tempore,
+          atque asperiores voluptate ipsam voluptatum dolore iste qui voluptas
+          deserunt!
+        </p>
+      </div>
 
       <!-- benefits 1  -->
-       <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-[16px]">
-          <!-- benefit 1 -->
-          <div class="col-span-1 text-center bg-light_brown__background p-2">
-            <ion-icon
-              name="cash-outline"
-              class="text-dark_green__primary font-bold p-[.3rem]"
-              size="large"
-            ></ion-icon>
+      <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-[16px]">
+        <!-- benefit 1 -->
+        <div class="col-span-1 text-center bg-light_brown__background p-2">
+          <ion-icon
+            name="cash-outline"
+            class="text-dark_green__primary font-bold p-[.3rem]"
+            size="large"
+          ></ion-icon>
 
-            <!-- content  -->
-            <p class="italic text-sm">
-              Get 5 KES for every plastic bottle recycled at our stations,
-              incentivizing you to help clean up our environment.
-            </p>
-          </div>
-
-          <!-- benefit 2  -->
-          <div class="col-span-1 text-center bg-light_yellow__highlight p-2">
-            <ion-icon
-              name="planet-outline"
-              class="text-medium_brown__complementary p-[.3rem]"
-              size="large"
-            ></ion-icon>
-
-            <!-- content  -->
-            <p class="italic text-sm">
-              We turn collected plastics into toys, art, and durable furniture
-              using Wood Plastic Composite (WPC), reducing waste and promoting
-              sustainability.
-            </p>
-          </div>
-
-          <!-- benefit 3  -->
-          <div class="lg:col-span-1 md:col-span-1 col-span-2 text-center bg-medium_brown__complementary p-2">
-            <ion-icon
-              name="school-outline"
-              class="text-dark_green__primary p-[.3rem]"
-              size="large"
-            ></ion-icon>
-
-            <!-- content  -->
-            <p class="italic text-sm">
-              We employ local youth, fund scientific research, and offer
-              educational programs and scholarships, fostering a culture of
-              environmental responsibility and providing opportunities for
-              growth.
-            </p>
-          </div>
+          <!-- content  -->
+          <p class="italic text-sm">
+            Get 5 KES for every plastic bottle recycled at our stations,
+            incentivizing you to help clean up our environment.
+          </p>
         </div>
-     </section>
+
+        <!-- benefit 2  -->
+        <div class="col-span-1 text-center bg-light_yellow__highlight p-2">
+          <ion-icon
+            name="planet-outline"
+            class="text-medium_brown__complementary p-[.3rem]"
+            size="large"
+          ></ion-icon>
+
+          <!-- content  -->
+          <p class="italic text-sm">
+            We turn collected plastics into toys, art, and durable furniture
+            using Wood Plastic Composite (WPC), reducing waste and promoting
+            sustainability.
+          </p>
+        </div>
+
+        <!-- benefit 3  -->
+        <div
+          class="lg:col-span-1 md:col-span-1 col-span-2 text-center bg-medium_brown__complementary p-2"
+        >
+          <ion-icon
+            name="school-outline"
+            class="text-dark_green__primary p-[.3rem]"
+            size="large"
+          ></ion-icon>
+
+          <!-- content  -->
+          <p class="italic text-sm">
+            We employ local youth, fund scientific research, and offer
+            educational programs and scholarships, fostering a culture of
+            environmental responsibility and providing opportunities for growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section about  -->
+    <section
+      class="lg:mt-[3em] h-full w-full grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:grid-rows-3 md:grid-rows-3 grid-rows-4"
+    >
+      <!-- grid one for about us  -->
+      <div class="col-span-1 row-span-1">
+        <h2 class="tracking-widest font-bold">ABOUT US</h2>
+        <p class="text-justify">
+          We aim to reduce plastic waste by incentivizing plastic bottle
+          recycling. Our facility uses innovative barcode scanning technology to
+          reward recyclers with 5 Kenyan Shillings per bottle, deposited into
+          their MPESA accounts. This system promotes recycling, reduces
+          pollution, and conserves resources. We also educate communities on
+          environmental conservation through various outreach programs. Join us
+          in creating a cleaner, greener future.
+        </p>
+      </div>
+
+      <!-- grid two image rowspan 3  -->
+       <div class="col-span-1 lg:row-span-2 md:row-span-2 row-span-1"></div>
+    </section>
 
     <!-- ionic icons  -->
     <script
