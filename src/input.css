@@ -81,6 +81,7 @@ h6 {
   body {
     width: 83%;
     margin: 0 auto;
+    /* @apply bg-light_yellow__highlight */
   }
   h1 {
     @apply text-3xl;
