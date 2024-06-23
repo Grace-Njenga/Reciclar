@@ -48,6 +48,9 @@
 /* small screens  */
 /* $bp-small: 48em; // 768px */
 @media (max-width: 500px) and (min-width: 200px) {
+  body{
+    width: 94%;
+  }
   .nav {
     position: fixed !important;
     inset: 0 0 0 30%;
@@ -80,6 +83,27 @@
     color: black;
   }
 
+  .centered{
+    width: 100%;
+    margin-bottom: 2em;
+  }
 
+  .grid-about{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .team-content,
+  .career-content,
+  .image,
+  .image-2{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .image{
+    grid-row: 1 / 2;
+  }
+  .radius{
+    border-radius: 0%;
+  }
 
 }

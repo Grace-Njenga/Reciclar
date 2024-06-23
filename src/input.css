@@ -78,8 +78,8 @@ h6 {
   html {
     font-family: "Trykker", serif;
   }
-  body{
-    width: 85%;
+  body {
+    width: 83%;
     margin: 0 auto;
   }
   h1 {
@@ -100,14 +100,40 @@ h6 {
     @apply font-Trykker;
     @apply font-normal;
   }
-
-  /* centered  */
-  .centered{
-    width: 80%;
-    margin: 0 auto;
-  }
 }
 
-.menu{
+.menu {
   display: none;
+}
+/* centered  */
+.centered {
+  width: 75%;
+  margin: 0 auto;
+}
+/* grid about us  */
+.grid-about {
+  display: grid;
+  height: 100%;
+  grid-gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* background-color: brown; */
+}
+.team-content,
+.career-content {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+.image {
+  grid-column: span 1;
+  grid-row: 1 / -2;
+}
+.image-2 {
+  grid-column: span 1;
+  grid-row: 2 / -1; 
+}
+
+.radius{
+  border-radius: 50%;
+  border: 2px solid #C48D60;
 }
