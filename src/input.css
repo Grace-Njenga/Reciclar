@@ -134,6 +134,7 @@ h6 {
 }
 
 .radius{
-  border-radius: 50%;
-  border: 2px solid #C48D60;
+  display: flex;
+  align-items: flex-end;
+  object-position: center;
 }
