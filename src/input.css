@@ -22,6 +22,8 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  width: 90%;
+  margin: 0 auto;
 }
 /*
   5. Improve media defaults
@@ -108,8 +110,16 @@ h6 {
 }
 /* centered  */
 .centered {
-  width: 75%;
-  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* From https://css.glass */
+  background: rgba(99, 138, 85, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  height: 50%;
 }
 /* grid about us  */
 .grid-about {
@@ -131,10 +141,10 @@ h6 {
 }
 .image-2 {
   grid-column: span 1;
-  grid-row: 2 / -1; 
+  grid-row: 2 / -1;
 }
 
-.radius{
+.radius {
   display: flex;
   align-items: flex-end;
   object-position: center;
