@@ -749,6 +749,10 @@ p,
   margin: 1rem;
 }
 
+.m-\[1em\] {
+  margin: 1em;
+}
+
 .my-\[\.3rem\] {
   margin-top: .3rem;
   margin-bottom: .3rem;
@@ -767,6 +771,21 @@ p,
 .my-\[1rem\] {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-\[2\] {
+  margin-top: 2;
+  margin-bottom: 2;
+}
+
+.my-\[2em\] {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .mb-\[1em\] {
@@ -857,6 +876,11 @@ p,
   border-radius: 0.5rem;
 }
 
+.bg-dark_green__primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 138 85 / var(--tw-bg-opacity));
+}
+
 .bg-light_brown__background {
   --tw-bg-opacity: 1;
   background-color: rgb(225 176 131 / var(--tw-bg-opacity));
@@ -904,6 +928,14 @@ p,
   padding: 1em;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-\[\] {
+  padding: ;
+}
+
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
@@ -929,12 +961,31 @@ p,
   padding-bottom: 14px;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-\[2em\] {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.py-\[2rem\] {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-\[2rem\] {
   padding-bottom: 2rem;
 }
 
 .pt-\[\.5em\] {
   padding-top: .5em;
+}
+
+.pt-\[2rem\] {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -947,6 +998,10 @@ p,
 
 .font-Cabin {
   font-family:  "Cabin Sketch", sans-serif;
+}
+
+.font-Gorditas {
+  font-family:  "Gorditas", serif;
 }
 
 .text-3xl {
@@ -1015,6 +1070,10 @@ p,
 .text-medium_brown__complementary {
   --tw-text-opacity: 1;
   color: rgb(196 141 96 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .menu {
@@ -1114,11 +1173,6 @@ p,
 
   .md\:grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:object-contain {
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 
   .md\:p-\[1em\] {
