@@ -9,19 +9,19 @@
 
 /* large screens */
 /* $bp-medium: 64em; // 1024px */
-@media screen and (min-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1400px) {
   * {
     font-size: --base-font-size * 1.2;
     line-height: var(--base-line-height) * 1.2;
   }
-  /* body{
-    margin: 0 15rem;
-  } */
-  .container {
-    width: 1370px;
+  body {
+    width: 95%;
   }
-  .hero_content {
-    width: 100%;
+  .centered {
+    width: 55%;
+    height: 40%;
+    backdrop-filter: blur(16.1px);
+    -webkit-backdrop-filter: blur(16.1px);
   }
 }
 
@@ -36,7 +36,7 @@
 }
 
 /* $bp-xlarge: 120em; // 1920px */
-@media screen and (min-width: 1900px) {
+@media screen and (max-width: 1900px) {
   * {
     font-size: var(--base-font-size) * 1.4;
   }
@@ -47,7 +47,7 @@
 
 /* small screens  */
 /* $bp-small: 48em; // 768px */
-@media (max-width: 500px) and (min-width: 200px) {
+@media (max-width: 767px) and (min-width: 200px) {
   body {
     width: 97%;
   }

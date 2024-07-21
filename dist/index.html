@@ -29,7 +29,11 @@
     <header class="m-4 relative flex justify-between self-center">
       <!-- logo  -->
       <div class="flex self-center">
-        <h3 class="tracking-wider font-bold">RECICLAR</h3>
+        <h3
+          class="tracking-wider font-bold text-dark_green__primary font-Cabin"
+        >
+          RECICLAR
+        </h3>
       </div>
       <ion-icon
         name="menu-sharp"
@@ -40,28 +44,32 @@
       ></ion-icon>
       <!-- navigation bar  -->
       <nav class="flex">
-        <ul id="icon-menu" data-visible="false" class="nav flex py-2 gap-6">
-          <li class="md:mr-4 lg:mr-6 lg:ml-4 md:ml-4 ml-0">
+        <ul
+          id="icon-menu"
+          data-visible="false"
+          class="nav flex lg:py-2 text-center gap-6"
+        >
+          <li class="md:mr-1 lg:mr-6 lg:ml-4 md:ml-1 ml-0">
             <a href="#home" class="font-semibold">Home</a>
           </li>
           <!-- about_us -->
-          <li class="md:mr-4 lg:mr-6">
+          <li class="md:mr-1 lg:mr-6">
             <a href="#about" class="font-semibold">About Us</a>
           </li>
           <!-- our products -->
-          <li class="md:mr-4 lg:mr-6">
+          <li class="md:mr-1 lg:mr-6">
             <a href="#products" class="font-semibold">Our Products</a>
           </li>
           <!-- gallery -->
-          <li class="md:mr-4 lg:mr-6">
+          <li class="md:mr-1 lg:mr-6">
             <a href="#gallery" class="font-semibold">Gallery</a>
           </li>
           <!-- contact_us  -->
-          <li class="md:mr-4 lg:mr-6">
+          <li class="md:mr-1 lg:mr-6">
             <a href="#contact" class="font-semibold">Contact Us</a>
           </li>
           <!-- Cta  -->
-          <li class="md:mr-4 lg:mr-6">
+          <li class="md:mr-1 lg:mr-6">
             <a
               href="#Scan.py"
               class="bg-pale_yellow__background text-medium_brown__complementary rounded-lg px-[8px] py-[14px] font-semibold"
@@ -73,9 +81,7 @@
     </header>
 
     <!-- section hero grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:grid-rows-1 md:grid-rows-1 grid-rows-2 gap-[1em]  -->
-    <section
-      class="pt-[.5em] h-dvh"
-    >
+    <section class="pt-[.5em] h-dvh">
       <!-- image hero -->
       <div class="h-full w-full row-span-1 col-span-1 relative">
         <img
@@ -87,7 +93,9 @@
       </div>
 
       <!-- content  text-base-->
-      <div class="grid place-content-center text-justify row-span-1 absolute centered p-[1em]">
+      <div
+        class="grid place-content-center text-justify row-span-1 absolute centered p-[1em]"
+      >
         <h1
           class="text-dark_green__primary tracking-wide font-extrabold md:font-4xl lg:text-4xl"
         >
@@ -121,11 +129,15 @@
       <!-- heading  -->
       <h1 class="">How Does it Work?</h1>
       <div
-        class="h-full w-full grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1 gap-[2em] mb-[1rem]"
+        class="h-full w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[2em] mb-[1rem]"
       >
         <!-- grid 1  -->
         <div class="col-span-1 row-span-1 grid grid-rows-2">
-          <img src="./img/Navigation.png" alt="" class="radius image-cover" />
+          <img
+            src="./img/Navigation.png"
+            alt=""
+            class="radius image-cover object-contain"
+          />
 
           <div class="place-content-center grid">
             <h2 class="font-bold italic my-[.5em]">Visit Our Outlet</h2>
@@ -160,7 +172,11 @@
 
         <!-- grid 3  -->
         <div class="col-span-1 row-span-1 grid grid-rows-2">
-          <img src="./img/Throw_away.png" alt="" class="radius image-cover" />
+          <img
+            src="./img/Throw_away.png"
+            alt=""
+            class="radius image-cover object-contain"
+          />
 
           <div class="place-content-center grid">
             <h2 class="font-bold italic my-[.5em]">Deposit the Bottle</h2>
@@ -197,9 +213,7 @@
     <section class="bg-pale_yellow__background lg:p-[3em] md:p-[1em] p-[1em]">
       <!-- title and a small intro text-4xl -->
       <div class="text-center mb-[1em]">
-        <h1 class="font-extrabold">
-          Why recycle with Us?
-        </h1>
+        <h1 class="font-extrabold">Why recycle with Us?</h1>
         <p class="">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
           ratione vel sit ut corrupti, cupiditate quod alias accusamus tempore,
@@ -283,7 +297,7 @@
         <img
           src="./img/Recycling.png"
           alt="Team Illustration"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-center object-contain"
         />
       </div>
 
@@ -292,7 +306,7 @@
         <img
           src="./img/Creative_woman.png"
           alt="Team Illustration"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-center object-contain"
         />
       </div>
 
@@ -313,7 +327,36 @@
     </section>
 
     <!-- section products we have  -->
-    <section class="h-full w-full"></section>
+    <section class="h-full w-full bg-pale_yellow__background">
+      <h1 class="">Our Products</h1>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <img src="./img/art-and-jewelry-from-upcycled-waste.jpeg" alt="">
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <img src="./img/a-striking-photo-of-innovative-furniture-pieces-.jpeg" alt="">
+          </div>
+
+          <!-- Slide 3  -->
+          <div class="swiper-slide">
+            <img src="./img/a-creative-display-of-toys-crafted-from-upcycled-plastic.jpeg" alt="">
+          </div>
+        
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
 
     <!-- ionic icons  -->
     <script

@@ -35,6 +35,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  object-fit: contain;
 }
 /*
   6. Remove built-in form typography styles
@@ -103,6 +104,24 @@ h6 {
     @apply font-Trykker;
     @apply font-normal;
   }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .menu {
@@ -110,22 +129,22 @@ h6 {
 }
 /* centered  */
 .centered {
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* From https://css.glass */
-  background: rgba(99, 138, 85, 0.21);
+  background: rgba(233, 242, 230, 0.61);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.9px);
-  -webkit-backdrop-filter: blur(6.9px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   height: 50%;
 }
 /* grid about us  */
 .grid-about {
   display: grid;
   height: 100%;
-  grid-gap: 3px;
+  grid-gap: 2em;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   /* background-color: brown; */
