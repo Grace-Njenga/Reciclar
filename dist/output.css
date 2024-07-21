@@ -844,6 +844,10 @@ p,
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -1153,6 +1157,18 @@ p,
 
   .md\:mr-4 {
     margin-right: 1rem;
+  }
+
+  .md\:mt-\[\] {
+    margin-top: ;
+  }
+
+  .md\:mt-\[2em\] {
+    margin-top: 2em;
+  }
+
+  .md\:h-full {
+    height: 100%;
   }
 
   .md\:grid-cols-1 {

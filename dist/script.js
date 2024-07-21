@@ -15,7 +15,7 @@ navToogle.addEventListener("click", () => {
 
 // Initialize swipper
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
+  slidesPerView: "auto",
   spaceBetween: 30,
   centeredSlides: true,
   // Optional parameters
