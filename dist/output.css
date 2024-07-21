@@ -597,6 +597,16 @@ p,
      object-fit: contain;
 }
 
+button{
+  font: bold;
+  font-family:  "Gorditas", serif;
+}
+
+button:hover{
+  background-color: #E1B083;
+  color: #638A55;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -773,21 +783,6 @@ p,
   margin-bottom: 1rem;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.my-\[2\] {
-  margin-top: 2;
-  margin-bottom: 2;
-}
-
-.my-\[2em\] {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
 .mb-\[1em\] {
   margin-bottom: 1em;
 }
@@ -932,14 +927,6 @@ p,
   padding: 1em;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
-.p-\[\] {
-  padding: ;
-}
-
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
@@ -963,21 +950,6 @@ p,
 .py-\[14px\] {
   padding-top: 14px;
   padding-bottom: 14px;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-\[2em\] {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-.py-\[2rem\] {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pb-\[2rem\] {
@@ -1159,16 +1131,8 @@ p,
     margin-right: 1rem;
   }
 
-  .md\:mt-\[\] {
-    margin-top: ;
-  }
-
   .md\:mt-\[2em\] {
     margin-top: 2em;
-  }
-
-  .md\:h-full {
-    height: 100%;
   }
 
   .md\:grid-cols-1 {
