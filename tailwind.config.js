@@ -10,6 +10,7 @@ module.exports = {
     },
 
     colors: {
+      white: "#f4f4f4",
       // DARK-GREEN ---- Primary color
       // Can be used as a primary color, background color for sections, or in elements like buttons, headers, and footers.
       dark_green__primary: "#638A55",
