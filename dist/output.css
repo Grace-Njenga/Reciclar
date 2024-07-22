@@ -555,7 +555,7 @@ h1 {
   --tw-text-opacity: 1;
   color: rgb(99 138 85 / var(--tw-text-opacity));
   font-family:  "Cabin Sketch", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2 {
@@ -567,26 +567,32 @@ h2 {
   color: rgb(155 186 116 / var(--tw-text-opacity));
 }
 
-p,
-  a {
+a {
   font-size: 1rem;
   line-height: 1.5rem;
   font-family:  "Trykker", serif;
   font-weight: 400;
 }
 
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .swiper {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  font-weight: bold;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1em;
 }
 
 .swiper-slide img {
@@ -597,14 +603,17 @@ p,
      object-fit: contain;
 }
 
-button{
-  font: bold;
+button {
+  font-weight: 700;
   font-family:  "Gorditas", serif;
+  --tw-text-opacity: 1;
+  color: rgb(244 244 244 / var(--tw-text-opacity));
+  margin: 0px;
 }
 
-button:hover{
-  background-color: #E1B083;
-  color: #638A55;
+button:hover {
+  background-color: #e1b083;
+  color: #638a55;
 }
 
 *, ::before, ::after {
@@ -759,10 +768,6 @@ button:hover{
   margin: 1rem;
 }
 
-.m-\[1em\] {
-  margin: 1em;
-}
-
 .my-\[\.3rem\] {
   margin-top: .3rem;
   margin-bottom: .3rem;
@@ -793,6 +798,18 @@ button:hover{
 
 .ml-0 {
   margin-left: 0px;
+}
+
+.mt-\[1em\] {
+  margin-top: 1em;
+}
+
+.mt-\[2em\] {
+  margin-top: 2em;
+}
+
+.mb-\[2rem\] {
+  margin-bottom: 2rem;
 }
 
 .flex {
@@ -923,6 +940,10 @@ button:hover{
   padding: .3rem;
 }
 
+.p-\[\.5em\] {
+  padding: .5em;
+}
+
 .p-\[1em\] {
   padding: 1em;
 }
@@ -958,10 +979,6 @@ button:hover{
 
 .pt-\[\.5em\] {
   padding-top: .5em;
-}
-
-.pt-\[2rem\] {
-  padding-top: 2rem;
 }
 
 .text-center {
@@ -1076,10 +1093,11 @@ button:hover{
 .grid-about {
   display: grid;
   height: 100%;
+  width: 100%;
   grid-gap: 2em;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  /* background-color: brown; */
+  grid-template-rows: repeat(3, minmax(150px, 1fr));
+  place-content: center;
 }
 
 .team-content,
@@ -1159,6 +1177,11 @@ button:hover{
     padding: 1em;
   }
 
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1196,6 +1219,10 @@ button:hover{
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-Custom-rows {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
   }
 
   .lg\:grid-rows-1 {

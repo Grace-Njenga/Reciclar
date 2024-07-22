@@ -36,6 +36,9 @@ module.exports = {
       medium_brown__complementary: "#C48D60",
     },
     extend: {
+      gridTemplateColumns: {
+        "Custom-rows": "repeat(4, minmax(100px, 1fr))",
+      },
       fontFamily: {
         Cabin: [' "Cabin Sketch", sans-serif'],
         Gorditas: [' "Gorditas", serif'],

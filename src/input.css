@@ -90,7 +90,7 @@ h6 {
     @apply text-3xl;
     @apply text-dark_green__primary;
     @apply font-Cabin;
-    @apply font-bold;
+    @apply font-extrabold;
   }
   h2 {
     @apply text-2xl;
@@ -98,11 +98,13 @@ h6 {
     @apply font-medium;
     @apply text-light_green__secondary;
   }
-  p,
   a {
     @apply text-base;
     @apply font-Trykker;
     @apply font-normal;
+  }
+  p{
+    @apply text-xl;
   }
   .swiper {
     width: 100%;
@@ -124,14 +126,15 @@ h6 {
     height: 100%;
     object-fit: contain;
   }
-  button{
-    @apply font-bold
+  button {
+    @apply font-bold;
     @apply font-Gorditas;
     @apply text-white;
+    @apply m-0;
   }
-  button:hover{
-    background-color: #E1B083;
-    color: #638A55;
+  button:hover {
+    background-color: #e1b083;
+    color: #638a55;
   }
 }
 
@@ -155,11 +158,11 @@ h6 {
 .grid-about {
   display: grid;
   height: 100%;
+  width: 100%;
   grid-gap: 2em;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(150px, 1fr));
   place-content: center;
-  /* background-color: brown; */
 }
 .team-content,
 .career-content {
