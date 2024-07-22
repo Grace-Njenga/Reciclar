@@ -37,7 +37,8 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        "Custom-rows": "repeat(4, minmax(100px, 1fr))",
+        "Custom-rows": "repeat(4, minmax(150px, 1fr))",
+        "Custom-Columns": "repeat(3, minmax(200px, 1fr))",
       },
       fontFamily: {
         Cabin: [' "Cabin Sketch", sans-serif'],
